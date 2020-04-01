@@ -4,23 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="icon" href="icon.png"  sizes="192x192">
-	<title>Accessing Centrelink during COVID-19 - A simple guide.</title>
+    <link rel="icon" href="icon.png" sizes="192x192">
+	<title>Accessing Centrelink during COVID-19 - A simple step-by-step guide.</title>
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@SophieTrevitt">
 	<meta name="twitter:title" content="Accessing Centrelink during COVID-19">
-	<meta name="twitter:description" content="A simple step-by-step guide">
+	<meta name="twitter:description" content="A simple step-by-step guide.">
     <meta name="twitter:image:src" content="https://canigetcentrelink.com.au/share.png">
 	<meta property="og:type" content="website">
     <meta property="og:url" content="https://canigetcentrelink.com.au">
 	<meta property="og:title" content="Accessing Centrelink during COVID-19">
-	<meta property="og:description" content="A simple step-by-step guide">
-    <meta property="og:image" content="https://github.com/cardiacunicorn/canigetcentrelink/blob/master/share.png?raw=true">
+	<meta property="og:description" content="A simple step-by-step guide.">
+    <meta property="og:image" content="https://canigetcentrelink.com.au/share.png">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&display=hide" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<style>
-*,
-*:before,
+*, 
+*:before, 
 *:after {
 box-sizing:inherit}
 
@@ -60,12 +60,32 @@ max-width:380px}
 header {
 margin-bottom:2rem}
 
+.icon {
+display:flex;
+width:41px;
+margin:1rem auto .25rem;
+border:1px solid #0D0B0B;
+text-align:center;
+font-size:10px;
+opacity:1}
+
+.icon span {
+width:20px;
+height:20px;
+line-height:20px;
+background:#fff;
+font-weight:400}
+
+.icon span:first-child {
+border-right:1px solid #0D0B0B}
+
 h1 {
 margin:0;
 font-weight:200;
 font-size:3rem;
 line-height:1.1;
-letter-spacing:-.05em}
+letter-spacing:-.05em;
+text-align:center}
 
 header p {
 border-top:1px solid #0D0B0B;
@@ -127,7 +147,8 @@ background:#DBE7FA;
 font-size:.75rem;
 z-index:1;
 width:85px;
-font-weight:400}
+font-weight:400;
+white-space:nowrap}
 
 .q p {
 position:relative;
@@ -141,7 +162,11 @@ line-height:1.15}
 
 .q p.msg {
 background:#EE9E4E;
-margin-bottom:5rem;}
+margin-bottom:5rem}
+
+.q .left {
+display:inline-block;
+text-align:left}
 
 .q p.msg:after {
 content:'';
@@ -217,21 +242,20 @@ background:#DBDBDB}
 [data-show="true"]{
 display:block}
 
-.results h3,
-.results h4 {
+.results h3 {
 text-align:center;
 font-size:1.5rem;
 margin:0 1.5rem;
 line-height:1.1}
 
 .results > p:first-child {
-margin:0}
+margin:0} 
 
 .results ol {
 padding:0;
 margin:1rem 0;
 list-style: none;
-counter-reset:c;}
+counter-reset:c}
 
 .results li {
 padding:0 0 12px 40px;
@@ -265,40 +289,78 @@ margin-top:0}
 .flag > p:last-child {
 margin-bottom:0}
 
-.reset {
+#finish {
 display:none;
-margin-bottom:10rem;
-text-align:center;
+margin-bottom:12rem;
+text-align:center}
+
+[data-result="true"] #finish  {
+display:block}
+
+a.download  {
+margin:.5rem 0;
+display:block;
+border:2px solid #0D0B0B;
+padding:8px;
+font-size:.75rem;
+text-decoration:none;
+transition:background .25s}
+
+.ie11 .download {
+display:none}
+
+a.download:hover {
+color:#fff;
+background:#0D0B0B}
+
+.reset {
 font-size:.75rem}
+
+.reset a {
+text-decoration:underline}
 
 .reset a:hover {
 opacity:.5}
 
-[data-result="true"] .reset {
-display:block}
-
 footer {
-margin-top:-2rem;
+position:relative;
+margin-top:-4rem;
 font-size:.8rem}
 
 footer p {
 margin-bottom:0}
+
+@media all and (min-width:620px){ 
+
+    body {
+    padding-top:1.5rem}
+    
+    header {
+    text-align:center;
+    margin-bottom:3rem}
+
+}
 
 @media all and (max-width:360px){
 
     h1 {
     font-size:2.5rem}
 
-}
+    .q {
+    font-size:1rem}
 
-@media all and (min-width:620px){
+    .q p,
+    .results {
+    padding:1.25rem 1rem 1.5rem}
 
-    body {
-    padding-top:3rem}
+    .flag {
+    margin:1.25rem -1rem -1.5rem}
 
-    header {
-    text-align:center;
-    margin-bottom:3rem}
+    .results h3 {
+    margin:0}
+
+    footer {
+    font-size:.7rem}
 
 }
 
@@ -310,11 +372,13 @@ margin-bottom:0}
 
         <header>
 
+            <div class="icon"><span>Y</span><span>N</span></div>
+
             <h1>Accessing Centrelink during COVID-19.</h1>
 
             <p>A simple step-by-step guide to see if you are <b>eligible for assistance</b> and if so, <b>how to access it</b>.</p>
 
-            <p class="updated">updated Tuesday, 31th March, 2020</p>
+            <p class="updated">updated Tuesday, 31st of March, 2020.</p>
 
         </header>
 
@@ -327,51 +391,48 @@ margin-bottom:0}
             <div class="q" data-id="s">
                 <p>Are you already receiving a Centrelink payment?</p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
-            </div>
+            </div>  
 
             <div class="q" data-id="s-n">
                 <p>Do you have a myGov account?</p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
-            </div>
+            </div> 
 
             <div class="q" data-id="s-n-y">
                 <p>Is your myGov account linked* to Medicare or the Australian Taxation Office (ATO)? <a class="note">* Check by logging into your myGov account and clicking on "Services" in the dashbar to see which services have been linked.</a></p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
-            </div>
+            </div> 
 
             <div class="q" data-id="s-n-y-y">
-                <p>Great, now you're all set up. If you have received Centrelink payments before you will already have a Centrelink Reference Number (CRN). You can find your CRN on Centrelink letters and concession cards. It is a 9 digit number that ends with a capital letter. Keep this handy for later.  However, you <b>no longer need a Centrelink Reference Number</b> to register your intention to apply for a payment - Centrelink will contact you to set this up later if you don't already have one</p>
+                <p>Great, now you're all set up. If you have received Centrelink payments before you will already have a Centrelink Reference Number (CRN). You can find your CRN on Centrelink letters and concession cards. It is a 9 digit number that ends with a capital letter. Keep this handy for later.  However, you <b>no longer need a CRN</b> to register your intention to apply for a payment - Centrelink will contact you to set this up later if you don't already have one</p>
                 <p class="opts"><a>Next</a></p>
             </div>
 
             <div class="q" data-id="s-n-y-y-y">
                 <p>
                     As a result of COVID-19 or the economic downturn have <b>any of the following</b> happened to you:<br><br>
+                    <span class="left">  
                     • Been stood down<br>
-                    • Lost your job<br>
-                    • Had shifts cut<br>
-                    • Lost or reduced work to care for young children<br>
-                    • Lost work due to self-isolation
+                    • Lost your job<br> 
+                    • Had shifts cut<br> 
+                    • Lost or reduced work to care for young children<br> 
+                    • Lost work due to self-isolation</span>
                 </p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
-            </div>
+            </div> 
 
             <div class="q" data-id="s-y">
                 <p>Have your <b>circumstances changed</b> as a result of COVID-19 or the economic downturn? (E.g. have you been stood down, lost your job or had shifts cut?)</p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
-            </div>
-
-
+            </div> 
 
             <div class="q" data-id="s-y-y">
 
-                <p class="msg"><b>Note</b>: If you have <b>lost your job</b> or been <b>stood down</b> on or after <b>1 March 2020</b> your employer may be eligible for the "JobKeeper" payment. This is a government payment to allow employers to keep on employees and pay them at least <b>$1500</b> per fortnight. Speak to your employer about this option. If you are self-employed you may also be eligible. <a href="https://www.ato.gov.au/general/gen/JobKeeper-payment/?fbclid=IwAR1Rk2A-vSqMI2E5EVqNqLU8GE3t-WF2Qb7n1PHhgChOn5lkHOu0UPGwg4k">Find out more here</a>. In the meantime, <b>you may still be eligible for a Centrelink payment</b>.</p>
+                <p class="msg"><b>Note</b>: If you have <b>lost your job</b> or been <b>stood down</b> on or after <b>1 March 2020</b> your employer may be eligible for the "JobKeeper" payment. This is a government payment to allow employers to keep on employees and pay them at least <b>$1500</b> per fortnight. Speak to your employer about this option.<br><br> If you are <b>self-employed</b> you may also be eligible. <a href="https://www.ato.gov.au/general/gen/JobKeeper-payment/?fbclid=IwAR1Rk2A-vSqMI2E5EVqNqLU8GE3t-WF2Qb7n1PHhgChOn5lkHOu0UPGwg4k">Find out more here</a>. In the meantime, <b>you may still be eligible for a Centrelink payment</b>.</p>
 
                 <p>Are you already receiving a JobSeeker (formerly Newstart) or a Youth Allowance job seeker payment?</p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
-            </div>
-
-
+            </div> 
 
             <div class="results" data-id="s-n-y-y-y-y">
 
@@ -380,9 +441,9 @@ margin-bottom:0}
                 <p>Register your intention to claim</p>
 
                 <ol>
-                    <li><b>Youth Allowance</b> (for job seekers) if you are between 16 - 21 years</li>
-                    <li><b>JobSeeker Payment</b> if you are between 22 or the <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">age Pension Age</a> (66 or older)</li>
-                    <li><b>Parenting Payment</b> if you are a young child's main carer</li>
+                    <li><b>Youth Allowance</b> (for job seekers) if you are between 16 - 21 years</li> 
+                    <li><b>JobSeeker Payment</b> if you are between 22 or the <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">age Pension Age</a> (66 or older)</li>  
+                    <li><b>Parenting Payment</b> if you are a young child's main carer</li> 
                 </ol>
 
                 <p>You must lodge your intention to claim <b>before April 13</b> to receive the first of two $750 one-off economic support payments.</p>
@@ -391,30 +452,31 @@ margin-bottom:0}
 
                 <div class="flag">
 
-                    <p>If you have <b>lost your job</b> or been <b>stood down</b> on or after <b>1 March 2020</b> your employer may be eligible for the “Job Keeper” payment. This is a government payment to allow employers to keep on employees and pay them at least $1500 per fortnight. Speak to your employer about this option. If you are self-employed you may also be eligible. <a href="https://www.ato.gov.au/general/gen/JobKeeper-payment/?fbclid=IwAR1Rk2A-vSqMI2E5EVqNqLU8GE3t-WF2Qb7n1PHhgChOn5lkHOu0UPGwg4k">Find out more here</a>. In the meantime, <b>you may still be eligible for a Centrelink payment</b> and should register your intention to claim.</p>
+                    <p>If you have <b>lost your job</b> or been <b>stood down</b> on or after <b>1 March 2020</b> your employer may be eligible for the "JobKeeper" payment. This is a government payment to allow employers to keep on employees and pay them at least $1500 per fortnight. Speak to your employer about this option.<br><br> If you are <b>self-employed</b> you may also be eligible. <a href="https://www.ato.gov.au/general/gen/JobKeeper-payment/?fbclid=IwAR1Rk2A-vSqMI2E5EVqNqLU8GE3t-WF2Qb7n1PHhgChOn5lkHOu0UPGwg4k">Find out more here</a>. In the meantime, <b>you may still be eligible for a Centrelink payment</b> and should register your intention to claim.</p>
 
-                    <p>You <b>do not need</b> to give Centrelink a bank statement, employment separation certificate or letter from your employer. Just lodge your intention to claim online and Centrelink will be in touch with you if they need more information.</p>
+                    <p>You <b>do not need</b> to give Centrelink a bank statement, employment separation certificate or letter from your employer. Just lodge your intention to claim online and Centrelink will be in touch with you if they need more information.</p> 
 
                 </div>
 
-            </div>
+            </div> 
 
             <div class="results" data-id="s-n-y-y-y-n">
-                <p>You may be eligible for another type of Centrelink payment. Go to the <a href="https://www.centrelink.gov.au/custsite_pfe/pymtfinderest/paymentFinderEstimatorPage.jsf?wec-appid=pymtfinderest">Centrelink website</a> to see what support you may be eligible for.<br><br>
-                You can also check out the fact sheets <a href="http://ejaustralia.org.au/self-help/">here</a> or call your <a href="http://ejaustralia.org.au/legal-help-centrelink/">local community legal centre</a> for more advice.
+                <p>You may be eligible for <b>another type of Centrelink payment</b>. Go to the <a href="https://www.centrelink.gov.au/custsite_pfe/pymtfinderest/paymentFinderEstimatorPage.jsf?wec-appid=pymtfinderest">Centrelink website</a> to see what support you may be eligible for.<br><br> 
+                You can also check out the fact sheets <a href="http://ejaustralia.org.au/self-help/">here</a> or call your <a href="http://ejaustralia.org.au/legal-help-centrelink/">local community legal centre</a> for more advice. 
             </div>
 
-
             <div class="results" data-id="s-n-y-n">
-
-                <p>You will need to log in to <a href="https://my.gov.au">myGov</a> to link your account. You can follow the tutorial to link your account to Medicare <a href="https://www.servicesaustralia.gov.au/individuals/online-help/link-service-mygov-without-online-account">here</a> or the ATO <a href="https://www.ato.gov.au/General/Online-services/Individuals-and-sole-traders/#BK_2LinkyourmyGovaccounttotheATO">here</a>.<br><br>
-                Once you have done this, go back and click 'Yes' in the question above to continue.</p>
+      
+                <p>You will need to <b>log in</b> to <a href="https://my.gov.au">myGov</a> to link your account. You can follow the tutorial to link your account to Medicare <a href="https://www.servicesaustralia.gov.au/individuals/online-help/link-service-mygov-without-online-account">here</a> or to the ATO <a href="https://www.ato.gov.au/General/Online-services/Individuals-and-sole-traders/#BK_2LinkyourmyGovaccounttotheATO">here</a>.<br><br>
+                Once you have done this, click 'Yes' in the question above to continue.</p>
 
             </div>
 
             <div class="results" data-id="s-n-n">
 
-                <p>Go to <a href="https://my.gov.au">myGov</a> to register for an account. You <b>will need an email address to register</b>. Once you've set up the account go back and click 'Yes' in the question above to continue.</p>
+                <p>Go to <a href="https://my.gov.au">myGov</a> to register for an account. You <b>will need an email address to register</b>.</p>
+                
+                <p>Once you've set up the account click 'Yes' in the question above to continue.</p>
 
             </div>
 
@@ -437,20 +499,20 @@ margin-bottom:0}
 
                 <div class="flag">
 
-                    <p><b>Note:</b> Mutual obligation requirements for the JobSeeker payment, Youth Allowance as a job seeker or Parenting Payment have been <b>suspended</b> until 27 April 2020.</p>
+                    <p><b>Note:</b> Mutual obligation requirements for the JobSeeker payment, Youth Allowance as a job seeker or Parenting Payment have been <b>suspended</b> until 27 April 2020.</p> 
 
                 </div>
 
-            </div>
+            </div> 
 
             <div class="results" data-id="s-y-y-n">
 
                 <h3>Register your intention to Claim</h3>
 
                 <ol>
-                    <li><b>Youth Allowance</b> (for job seekers) if you are between 16 - 21 years</li>
-                    <li><b>JobSeeker Payment</b> if you are between 22 or the <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">age Pension Age</a> (66 or older)</li>
-                    <li><b>Parenting Payment</b> if you are a young child's main carer</li>
+                    <li><b>Youth Allowance</b> (for job seekers) if you are between 16 - 21 years</li> 
+                    <li><b>JobSeeker Payment</b> if you are between 22 or the <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">age Pension Age</a> (66 or older)</li>  
+                    <li><b>Parenting Payment</b> if you are a young child's main carer</li> 
                 </ol>
 
                 <p>You must lodge your intention to claim <b>before April 13</b> to receive the first of two $750 one-off economic support payments. You will receive this payment if you are <a href="https://www.servicesaustralia.gov.au/individuals/news/750-one-economic-support-payment">receiving an eligible payment</a> between <b>12 March</b> and <b>13 April 2020</b>.</p>
@@ -459,11 +521,11 @@ margin-bottom:0}
 
                 <div class="flag">
 
-                    <p><b>Note:</b> You <b>do not need</b> to give Centrelink a bank statement, employment separation certificate or letter from your employer. Just lodge your intention to claim online and Centrelink will be in touch with you if they need more information.</p>
+                    <p><b>Note:</b> You <b>do not need</b> to give Centrelink a bank statement, employment separation certificate or letter from your employer. Just lodge your intention to claim online and Centrelink will be in touch with you if they need more information.</p> 
 
                 </div>
-
-            </div>
+                
+            </div> 
 
             <div class="results" data-id="s-y-n">
 
@@ -484,13 +546,18 @@ margin-bottom:0}
 
                 <div class="flag">
 
-                    <p><b>Note:</b> Mutual obligation requirements for the JobSeeker payment, Youth Allowance as a job seeker or Parenting Payment have been <b>suspended</b> until 27 April 2020.</p>
+                    <p><b>Note:</b> Mutual obligation requirements for the JobSeeker payment, Youth Allowance as a job seeker or Parenting Payment have been <b>suspended</b> until 27 April 2020.</p> 
 
                 </div>
 
-            </div>
+            </div>  
 
-            <p class="reset"><a>Start again?</a></p>
+            <div id="finish">
+                
+                <a href class="download" download="centrelink-flowchart.png"><span>↓</span> Download chart</a>
+                <p class="reset">or <a>start again?</a></p>
+            
+            </div>
 
         </main>
 
@@ -508,16 +575,20 @@ margin-bottom:0}
 'use strict';
 
 /* IE11 */
-if (window.NodeList && !NodeList.prototype.forEach){
-  NodeList.prototype.forEach = Array.prototype.forEach;
-}
+
 
 var $top = $('html, body'),
     $body = document.querySelector('body'),
     $start = document.querySelector('[data-id="s"]'),
     $questions = document.querySelectorAll('.q'),
-    //hash = location.hash,
-    isSmooth = ('scrollBehavior' in document.documentElement.style)
+    $download = document.querySelector('.download'),
+    isIE11 = false
+
+if (window.NodeList && !NodeList.prototype.forEach){
+    NodeList.prototype.forEach = Array.prototype.forEach;
+    isIE11 = true;
+    $body.className = 'ie11'
+}
 
 document
     .querySelectorAll('a[href]')
@@ -535,7 +606,7 @@ document
             $q = $parent.parentNode,
             currentQ = $q.getAttribute('data-id'),
             answer = $node.textContent,
-            selected = (answer=='No')? 'n': 'y'
+            selected = (answer=='No')? 'n': 'y'    
 
             $q.className = 'q '+selected
 
@@ -546,18 +617,19 @@ document
             $next.setAttribute('data-show',true)
 
             if ($next.getAttribute('class') == 'results'){
-                $body.setAttribute('data-result',true)
+                $download.setAttribute('href','charts/'+next+'.png')
+                $body.setAttribute('data-result',true);
             }
             else {
                 $body.removeAttribute('data-result')
-            }
+            } 
 
             //CLEAN UP NOT CURRENT!
             cleanOtherOptions(next)
 
             //SCROLL TO
-            $top.animate({
-                scrollTop: getOffsetTop($next)-40
+            $top.animate({ 
+                scrollTop: getOffsetTop($next)-40 
             }, 750)
     })
 })
@@ -577,26 +649,22 @@ function cleanOtherOptions(next){
 }
 
 document
-    .querySelectorAll('.reset a')
-    .forEach(function ($node,i){
-        $node.addEventListener('click', function(e){
+    .querySelector('.reset a')
+    .addEventListener('click', function(e){
 
-            document
-                .querySelectorAll('[data-show="true"]')
-                .forEach(function ($node,i){
-                    $node.removeAttribute('data-show');
-                    $node.className = $node.className.replace(/\s(n|y)/gi,'')
-            })
+        document
+            .querySelectorAll('[data-show="true"]')
+            .forEach(function ($node,i){
+                $node.removeAttribute('data-show');
+                $node.className = $node.className.replace(/\s(n|y)/gi,'')
+        })
 
-            $body.removeAttribute('data-result');
-            $start.setAttribute('class','q');
+        $body.removeAttribute('data-result');
+        $start.setAttribute('class','q');
 
-            $top.animate({
-                scrollTop: 0
-            }, 250)
-
-
-    })
+        $top.animate({ 
+            scrollTop: 0 
+        }, 250)
 })
 
 /* (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com */

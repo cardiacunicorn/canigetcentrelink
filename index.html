@@ -9,12 +9,12 @@
 	<meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@SophieTrevitt">
 	<meta name="twitter:title" content="Accessing Centrelink during COVID-19">
-	<meta name="twitter:description" content="A simple step-by-step guide.">
+	<meta name="twitter:description" content="A simple step-by-step guide to see if you are eligible for assistance, and if so, how to access it.">
     <meta name="twitter:image:src" content="https://canigetcentrelink.com.au/share.png">
 	<meta property="og:type" content="website">
     <meta property="og:url" content="https://canigetcentrelink.com.au">
 	<meta property="og:title" content="Accessing Centrelink during COVID-19">
-	<meta property="og:description" content="A simple step-by-step guide.">
+	<meta property="og:description" content="A simple step-by-step guide to see if you are eligible for assistance, and if so, how to access it.">
     <meta property="og:image" content="https://canigetcentrelink.com.au/share.png">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&display=hide" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -109,7 +109,7 @@ font-size:1.2rem}
 
 .start,
 [data-id="s"],
-[data-show="true"] {
+[data-show="yes"] {
 display:block}
 
 .start:before,
@@ -239,7 +239,7 @@ padding:1.25rem 1.5rem;
 border:2px solid #0D0B0B;
 background:#DBDBDB}
 
-[data-show="true"]{
+[data-show="yes"]{
 display:block}
 
 .results h3 {
@@ -294,24 +294,28 @@ display:none;
 margin-bottom:12rem;
 text-align:center}
 
-[data-result="true"] #finish  {
+[data-result="yes"] #finish  {
 display:block}
 
 a.download  {
 margin:.5rem 0;
-display:block;
+display:none;
 border:2px solid #0D0B0B;
 padding:8px;
-font-size:.75rem;
+font-size:12px;
 text-decoration:none;
+text-transform:uppercase;
 transition:background .25s}
 
-.ie11 .download {
+.ie11 .download  {
 display:none}
+
+[data-end="yes"] .download {
+display:block}
 
 a.download:hover {
 color:#fff;
-background:#0D0B0B}
+background:#999}
 
 .reset {
 font-size:.75rem}
@@ -374,11 +378,11 @@ margin-bottom:0}
 
             <div class="icon"><span>Y</span><span>N</span></div>
 
-            <h1>Accessing Centrelink during COVID-19.</h1>
+            <h1>Accessing Centrelink during COVID-19</h1>
 
-            <p>A simple step-by-step guide to see if you are <b>eligible for assistance</b> and if so, <b>how to access it</b>.</p>
+            <p>A simple step-by-step guide to see if you are <b>eligible for assistance</b>, and if so, <b>how to access it</b>.</p>
 
-            <p class="updated">updated Tuesday, 31st of March, 2020.</p>
+            <p class="updated">updated Wednesday, 1st of April, 2020</p>
 
         </header>
 
@@ -389,7 +393,7 @@ margin-bottom:0}
             </div>
 
             <div class="q" data-id="s">
-                <p>Are you already receiving a Centrelink payment?</p>
+                <p>Are you <b>already receiving</b> a Centrelink payment?</p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
             </div>  
 
@@ -399,7 +403,7 @@ margin-bottom:0}
             </div> 
 
             <div class="q" data-id="s-n-y">
-                <p>Is your myGov account linked* to Medicare or the Australian Taxation Office (ATO)? <a class="note">* Check by logging into your myGov account and clicking on "Services" in the dashbar to see which services have been linked.</a></p>
+                <p>Is your myGov account linked* to Medicare or the Australian Taxation Office (ATO)? <span class="note">* Check by logging into your <a href="https://my.gov.au/">myGov</a> account and clicking on "Services" in the dashbar to see which services have been linked.</span></p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
             </div> 
 
@@ -430,11 +434,11 @@ margin-bottom:0}
 
                 <p class="msg"><b>Note</b>: If you have <b>lost your job</b> or been <b>stood down</b> on or after <b>1 March 2020</b> your employer may be eligible for the "JobKeeper" payment. This is a government payment to allow employers to keep on employees and pay them at least <b>$1500</b> per fortnight. Speak to your employer about this option.<br><br> If you are <b>self-employed</b> you may also be eligible. <a href="https://www.ato.gov.au/general/gen/JobKeeper-payment/?fbclid=IwAR1Rk2A-vSqMI2E5EVqNqLU8GE3t-WF2Qb7n1PHhgChOn5lkHOu0UPGwg4k">Find out more here</a>. In the meantime, <b>you may still be eligible for a Centrelink payment</b>.</p>
 
-                <p>Are you already receiving a JobSeeker (formerly Newstart) or a Youth Allowance job seeker payment?</p>
+                <p>Are you <b>already receiving</b> a JobSeeker (formerly Newstart) or a Youth Allowance job seeker payment?</p>
                 <p class="opts"><a>Yes</a><a>No</a></p>
             </div> 
 
-            <div class="results" data-id="s-n-y-y-y-y">
+            <div class="results" data-id="s-n-y-y-y-y" data-end="yes">
 
                 <h3>Sounds like you may be eligible for a job seeker payment.</h3>
 
@@ -461,8 +465,10 @@ margin-bottom:0}
             </div> 
 
             <div class="results" data-id="s-n-y-y-y-n">
+
                 <p>You may be eligible for <b>another type of Centrelink payment</b>. Go to the <a href="https://www.centrelink.gov.au/custsite_pfe/pymtfinderest/paymentFinderEstimatorPage.jsf?wec-appid=pymtfinderest">Centrelink website</a> to see what support you may be eligible for.<br><br> 
-                You can also check out the fact sheets <a href="http://ejaustralia.org.au/self-help/">here</a> or call your <a href="http://ejaustralia.org.au/legal-help-centrelink/">local community legal centre</a> for more advice. 
+                You can also check out the fact sheets <a href="http://ejaustralia.org.au/self-help/">here</a> or call your <a href="http://ejaustralia.org.au/legal-help-centrelink/">local community legal centre</a> for more advice.</p> 
+
             </div>
 
             <div class="results" data-id="s-n-y-n">
@@ -480,20 +486,22 @@ margin-bottom:0}
 
             </div>
 
-            <div class="results" data-id="s-y-y-y">
+            <div class="results" data-id="s-y-y-y" data-end="yes">
 
                 <h3>Do Nothing.</h3>
 
                 <p>You will <b>automatically</b> receive:</p>
 
                 <ol>
-                    <li>The <b>Coronavirus supplement</b></li>
-                    <li>Two <b>$750</b> one-off economic support payments.*</li>
+                    <li>The <b>Coronavirus supplement</b>*</li>
+                    <li><b>$750</b> one-off economic support payment(s)**</li>
                 </ol>
 
-                <p>* if you are receiving an eligible payment between 12 March and 13 April 2020. <a href="https://www.servicesaustralia.gov.au/individuals/news/750-one-economic-support-payment">Click here</a> to check if you are eligible.</p>
+                <p>* an additional, <b>temporary payment of $550 per fortnight</b> to people receiving certain payments. Check if you are eligible <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#cor">here</a>.</p> 
 
-                <p>Check Centrelink has your correct contact details via your <a href="https://my.gov.au">myGov account</a> (or <a href="https://www.servicesaustralia.gov.au/individuals/contact-us/phone-us#centrelink">calling Centrelink</a> but be prepared to wait on hold).</p>
+                <p>** You will receive the <b>first $750 payment</b> if you are receiving an eligible payment between 12 March and 13 April 2020. Click <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#fir">here</a> to check if you are eligible. You will receive a <b>second payment</b> if you are receiving an eligible payment but are <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#sec)">not in receipt of the Coronavirus Supplement</a></p>
+
+                <p>Check Centrelink has your correct contact details via your <a href="https://my.gov.au">myGov</a> account (or <a href="https://www.servicesaustralia.gov.au/individuals/contact-us/phone-us#centrelink">calling Centrelink</a> but be prepared to wait on hold).</p>
 
                 <p>Find out more <a href="http://ejaustralia.org.au/self-help/">here</a>.</p>
 
@@ -505,7 +513,7 @@ margin-bottom:0}
 
             </div> 
 
-            <div class="results" data-id="s-y-y-n">
+            <div class="results" data-id="s-y-y-n" data-end="yes">
 
                 <h3>Register your intention to Claim</h3>
 
@@ -527,20 +535,20 @@ margin-bottom:0}
                 
             </div> 
 
-            <div class="results" data-id="s-y-n">
+            <div class="results" data-id="s-y-n" data-end="yes">
 
                 <h3>Do Nothing.</h3>
 
                 <p>You will <b>automatically</b> receive:</p>
 
                 <ol>
-                    <li>The <b>Coronavirus supplement</b></li>
-                    <li>Two <b>$750</b> one-off economic support payments.*</li>
+                    <li>The <b>Coronavirus supplement</b>*</li>
+                    <li><b>$750</b> one-off economic support payment(s)**</li>
                 </ol>
 
-                <p>* if you are receiving an eligible payment between 12 March and 13 April 2020. <a href="https://www.servicesaustralia.gov.au/individuals/news/750-one-economic-support-payment">Click here</a> to check if you are eligible.</p>
+                <p>* an additional, <b>temporary payment of $550 per fortnight</b> to people receiving certain payments. Check if you are eligible <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#cor">here</a>.</p> 
 
-                <p>Check Centrelink has your correct contact details via your <a href="https://my.gov.au">myGov</a> account (or <a href="https://www.servicesaustralia.gov.au/individuals/contact-us/phone-us#centrelink">calling Centrelink</a> but be prepared to wait on hold).</p>
+                <p>** You will receive the <b>first $750 payment</b> if you are receiving an eligible payment between 12 March and 13 April 2020. Click <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#fir">here</a> to check if you are eligible. You will receive a <b>second payment</b> if you are receiving an eligible payment but are <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#sec)">not in receipt of the Coronavirus Supplement</a></p>
 
                 <p>Find out more <a href="http://ejaustralia.org.au/self-help/">here</a>.</p>
 
@@ -562,10 +570,12 @@ margin-bottom:0}
         </main>
 
         <footer>
+            
             <p>Go to <a href="https://www.servicesaustralia.gov.au/individuals/centrelink">Centrelink</a> →<br>
             More help & info available at <a href="http://ejaustralia.org.au/self-help/">Economic Justice Australia</a> →<br>
             Latest COVID-19 info from the <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert">Department of Health</a> →</p>
             <p>Created by <a href="https://twitter.com/SophieTrevitt">@SophieTrevitt</a></p>
+
         </footer>
 
     </div>
@@ -574,9 +584,6 @@ margin-bottom:0}
 
 'use strict';
 
-/* IE11 */
-
-
 var $top = $('html, body'),
     $body = document.querySelector('body'),
     $start = document.querySelector('[data-id="s"]'),
@@ -584,6 +591,7 @@ var $top = $('html, body'),
     $download = document.querySelector('.download'),
     isIE11 = false
 
+/* IE11 */
 if (window.NodeList && !NodeList.prototype.forEach){
     NodeList.prototype.forEach = Array.prototype.forEach;
     isIE11 = true;
@@ -614,14 +622,20 @@ document
                 $next = document.querySelector('[data-id="'+next+'"]')
 
             // SHOW
-            $next.setAttribute('data-show',true)
+            $next.setAttribute('data-show','yes')
 
             if ($next.getAttribute('class') == 'results'){
-                $download.setAttribute('href','charts/'+next+'.png')
-                $body.setAttribute('data-result',true);
+
+                $body.setAttribute('data-result','yes');
+
+                if ($next.getAttribute('data-end')=='yes'){
+                    $download.setAttribute('href','charts/'+next+'.png');
+                    $body.setAttribute('data-end','yes');
+                }
             }
             else {
-                $body.removeAttribute('data-result')
+                $body.removeAttribute('data-result');
+                $body.removeAttribute('data-end')
             } 
 
             //CLEAN UP NOT CURRENT!
@@ -639,7 +653,7 @@ function cleanOtherOptions(next){
 
     //check if part of current tree
     document
-        .querySelectorAll('[data-show="true"]')
+        .querySelectorAll('[data-show="yes"]')
         .forEach(function ($node,i){
             if (next.indexOf($node.getAttribute('data-id'))<0){
                 $node.removeAttribute('data-show');
@@ -653,13 +667,14 @@ document
     .addEventListener('click', function(e){
 
         document
-            .querySelectorAll('[data-show="true"]')
+            .querySelectorAll('[data-show="yes"]')
             .forEach(function ($node,i){
                 $node.removeAttribute('data-show');
                 $node.className = $node.className.replace(/\s(n|y)/gi,'')
         })
 
         $body.removeAttribute('data-result');
+        $body.removeAttribute('data-end');
         $start.setAttribute('class','q');
 
         $top.animate({ 

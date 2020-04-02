@@ -101,7 +101,7 @@ opacity:.5}
 .q {
 display:none;
 position:relative;
-padding-bottom:10rem;
+padding-bottom:12rem;
 text-align:center;
 font-size:1.2rem}
 
@@ -158,7 +158,7 @@ line-height:1.15}
 
 .q p.msg {
 background:#EE9E4E;
-margin-bottom:5rem}
+margin-bottom:4rem}
 
 .q .left {
 display:inline-block;
@@ -295,7 +295,7 @@ display:block}
 
 a.download  {
 margin:.5rem 0;
-display:none;
+display:block;
 border:2px solid #0D0B0B;
 padding:.75rem;
 font-size:.75rem;
@@ -306,12 +306,9 @@ transition:background .25s}
 .ie11 .download  {
 display:none}
 
-[data-end="yes"] .download {
-display:block}
-
 a.download:hover {
 color:#fff;
-background:#0D0B0B}
+background:#999}
 
 .reset {
 font-size:.75rem;
@@ -326,7 +323,7 @@ margin-top:-4rem;
 font-size:.8rem}
 
 [data-state="begun"] footer {
-margin-top:0rem}
+margin-top:4rem}
 
 footer p {
 margin-bottom:0}
@@ -606,6 +603,10 @@ if (window.NodeList && !NodeList.prototype.forEach){
     $body.className = 'ie11'
 }
 
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual'
+}
+
 document
     .querySelectorAll('a[href]')
     .forEach(function ($node,i){
@@ -636,24 +637,19 @@ document
             if ($next.getAttribute('class') == 'results'){
 
                 $body.setAttribute('data-result','yes');
+                $download.setAttribute('href','charts/'+next+'.png');
 
-                if ($next.getAttribute('data-end')=='yes'){
-                    $download.setAttribute('href','charts/'+next+'.png');
-                    $body.setAttribute('data-end','yes');
-                }
             }
             else {
                 $body.removeAttribute('data-result');
-                $body.removeAttribute('data-end')
             } 
 
             //CLEAN UP NOT CURRENT!
            cleanOtherOptions(next)
-           scroll.animateScroll(getOffsetTop($next)-0)
+           scroll.animateScroll(getOffsetTop($next) - 20)
            
     })
 })
-
 
 function cleanOtherOptions(next){
 
@@ -672,8 +668,6 @@ document
     .querySelector('.reset a')
     .addEventListener('click', function(e){
 
-        scroll.animateScroll(0)
-
         document
             .querySelectorAll('[data-show="yes"]')
             .forEach(function ($node,i){
@@ -682,9 +676,9 @@ document
         })
 
         $body.removeAttribute('data-result');
-        $body.removeAttribute('data-end');
-        $body.removeAttribute('data-state')
+        $body.removeAttribute('data-state');
         $start.setAttribute('class','q');
+        scroll.animateScroll(0)
         
 })
 
@@ -698,8 +692,7 @@ var getOffsetTop=function(f){var t=0;if(f.offsetParent)for(;f;)t+=f.offsetTop,f=
 var scroll = new SmoothScroll(null, {
    speed: 1000,
    easing: 'easeInOutQuad',
-   clip: true,
-   speedAsDuration: true
+   clip: true
 })
 
 </script>

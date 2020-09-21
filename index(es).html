@@ -1,0 +1,1434 @@
+<!doctype html>
+
+<html lang="es" dir="ltr">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="icon" href="icon.png" sizes="192x192">
+
+	<title>Una gu&#237;a paso a paso para acceder a Centrelink durante el COVID-19</title>
+
+	<meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:creator" content="@SophieTrevitt">
+
+	<meta name="twitter:title" content="Cómo acceder a Centrelink durante el COVID-19">
+
+	<meta name="twitter:description" content="Una guía sencilla y paso a paso para saber si cumple con los requisitos para recibir apoyo y, de ser así, cómo obtenerlo.">
+
+    <meta name="twitter:image:src" content="https://canigetcentrelink.com.au/share.png">
+
+	<meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://canigetcentrelink.com.au">
+
+	<meta property="og:title" content="Cómo acceder a Centrelink durante el COVID-19">
+
+	<meta property="og:description" content="Una guía sencilla y paso a paso para saber si cumple con los requisitos para recibir apoyo y, de ser así, cómo obtenerlo.">
+
+    <meta property="og:image" content="https://canigetcentrelink.com.au/share.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&display=hide" rel="stylesheet">
+
+	<style>
+
+*, 
+
+*:before, 
+
+*:after {
+
+box-sizing:inherit}
+
+
+
+html {
+
+box-sizing:border-box;
+
+min-height:100%;
+
+-webkit-font-smoothing:antialiased;
+
+font-size:18px}
+
+
+
+body {
+
+padding:.5rem 1rem 1rem;
+
+margin:0;
+
+background:#fff;
+
+color:#0D0B0B;
+
+font-family:'IBM Plex Sans', sans-serif;
+
+font-size:1rem;
+
+min-height:100%;
+
+font-weight:400;
+
+letter-spacing:-.025em}
+
+
+
+a {
+
+color:#0D0B0B;
+
+cursor:pointer;
+
+border:0}
+
+
+
+a[href]:hover {
+
+color:#0563FF;
+
+transition:.25s}
+
+
+
+b {
+
+font-weight:700}
+
+
+
+#page {
+
+margin:0 auto;
+
+max-width:380px}
+
+
+
+header {
+
+margin-bottom:2rem}
+
+
+
+.icon {
+
+display:flex;
+
+width:52px;
+
+margin:1rem auto .25rem;
+
+border:2px solid #0D0B0B;
+
+text-align:center;
+
+font-size:10px;
+
+opacity:1}
+
+
+
+.icon span {
+
+width:25px;
+
+height:25px;
+
+line-height:25px;
+
+background:#fff}
+
+
+
+.icon span:first-child {
+
+border-right:1px solid #0D0B0B}
+
+
+
+h1 {
+
+margin:0;
+
+font-weight:200;
+
+font-size:3rem;
+
+line-height:1.1;
+
+letter-spacing:-.05em;
+
+text-align:center}
+
+
+
+header p {
+
+border-top:1px solid #0D0B0B;
+
+margin:.75rem 0 0;
+
+padding:.5rem 0 .25rem;
+
+font-size:16px}
+
+
+
+.updated {
+
+border:0;
+
+margin:0;
+
+padding-top:0;
+
+font-size:12px;
+
+opacity:.5}
+
+
+
+.q {
+
+display:none;
+
+position:relative;
+
+padding-bottom:12rem;
+
+text-align:center;
+
+font-size:1.2rem}
+
+
+
+.start,
+
+[data-id="s"],
+
+[data-show="yes"] {
+
+display:block}
+
+
+
+.start:before,
+
+.q:before {
+
+content:'';
+
+position:absolute;
+
+top:0;
+
+bottom:0;
+
+left:25%;
+
+border-left:2px solid #0D0B0B;
+
+z-index:0;
+
+opacity:0;
+
+transition:opacity .25s}
+
+
+
+.start:before,
+
+.y:before,
+
+.n:before {
+
+opacity:1}
+
+
+
+.n:before {
+
+left:75%}
+
+
+
+.start:before  {
+
+left:50%}
+
+
+
+.start {
+
+padding-bottom:3rem}
+
+
+
+.start div {
+
+position:relative;
+
+margin:auto;
+
+border:2px solid #0D0B0B;
+
+padding:4px 8px;
+
+background:#DBE7FA;
+
+font-size:.75rem;
+
+z-index:1;
+
+width:50%;
+
+white-space:nowrap}
+
+
+
+.q p {
+
+position:relative;
+
+margin:0;
+
+padding:1.5rem 2rem 1.75rem;
+
+background:#FFF3CD;
+
+border:2px solid #0D0B0B;
+
+z-index:1;
+
+line-height:1.15}
+
+
+
+.q p.msg {
+
+background:#EE9E4E;
+
+margin-bottom:4rem}
+
+
+
+.q .left {
+
+display:inline-block;
+
+text-align:left}
+
+
+
+.q .left span {
+
+display:block;
+
+padding-left:1rem;
+
+position:relative}
+
+
+
+.q .left span:before {
+
+content:'•';
+
+position:absolute;
+
+left:0;
+
+top:0}
+
+
+
+.q p.msg:after {
+
+content:'';
+
+position:absolute;
+
+margin-top:2px;
+
+top:100%;
+
+left:50%;
+
+height:5rem;
+
+border-left:2px solid #0D0B0B;
+
+z-index:0;
+
+transition:opacity .25s}
+
+
+
+.y p.msg:after,
+
+.n p.msg:after {
+
+opacity:0}
+
+
+
+.q .note {
+
+display:block;
+
+margin:.5rem -1rem -.5rem;
+
+font-size:.75rem;
+
+opacity:.66}
+
+
+
+.q .opts {
+
+display:flex;
+
+border-top:0;
+
+padding:0;
+
+background:#fff;
+
+font-size:1rem}
+
+
+
+.q .opts a {
+
+width:50%;
+
+padding:.75rem;
+
+display:block;
+
+-webkit-user-select:none;
+
+transition:background .25s}
+
+
+
+.y .opts a:first-child,
+
+.n .opts a:last-child {
+
+background:#22B85C;
+
+color:#fff;
+
+font-weight:700;
+
+letter-spacing:normal}
+
+
+
+.q .opts a:first-child {
+
+border-right:2px solid #0D0B0B}
+
+
+
+.q[data-id="s-n-y-y"] .opts a:first-child {
+
+border:0;
+
+width:100%}
+
+
+
+.y .opts a:first-child,
+
+.n .opts a:last-child {
+
+cursor:default;
+
+pointer-events:none}
+
+
+
+.n[data-id="s"]:after {
+
+content:'Respire profundamente...';
+
+position:absolute;
+
+left:75%;
+
+border:2px solid #0D0B0B;
+
+padding:4px 8px;
+
+background:#DBE7FA;
+
+font-size:.75rem;
+
+white-space:nowrap;
+
+transform:translate(-50%, 120px)}
+
+
+
+.results {
+
+display:none;
+
+padding:1.25rem 1.5rem;
+
+border:2px solid #0D0B0B;
+
+background:#DBDBDB}
+
+
+
+[data-show="yes"]{
+
+display:block}
+
+
+
+.results h3 {
+
+text-align:center;
+
+font-size:1.5rem;
+
+margin:0 1.5rem;
+
+line-height:1.1}
+
+
+
+.results > p:first-child {
+
+margin:0} 
+
+
+
+.results ol {
+
+padding:0;
+
+margin:1rem 0;
+
+list-style: none;
+
+counter-reset:c}
+
+
+
+.results li {
+
+padding:0 0 12px 40px;
+
+margin:0;
+
+counter-increment:c;
+
+position:relative}
+
+
+
+.results li:before {
+
+content:counter(c);
+
+position:absolute;
+
+top:-2px;
+
+left:0;
+
+line-height:30px;
+
+width:30px;
+
+height:30px;
+
+color:#fff;
+
+text-align:center;
+
+font-weight:700;
+
+border-radius:50%;
+
+background:#EE9E4E}
+
+
+
+.flag {
+
+border-top:2px solid #0D0B0B;
+
+background:#EE9E4E;
+
+margin:1.5rem -1.5rem -1.25rem;
+
+padding:1.25rem 1.5rem}
+
+
+
+.flag > p {
+
+margin-top:0}
+
+
+
+.flag > p:last-child {
+
+margin-bottom:0}
+
+
+
+#finish {
+
+display:none;
+
+margin-bottom:12rem;
+
+text-align:center}
+
+
+
+[data-result="yes"] #finish  {
+
+display:block}
+
+
+
+a.download  {
+
+margin:.5rem 0;
+
+display:block;
+
+border:2px solid #0D0B0B;
+
+padding:.75rem;
+
+font-size:.75rem;
+
+text-decoration:none;
+
+text-transform:uppercase;
+
+transition:background .25s}
+
+
+
+.ie11 .download  {
+
+display:none}
+
+
+
+a.download:hover {
+
+color:#fff;
+
+background:#999}
+
+
+
+.reset {
+
+font-size:.75rem;
+
+opacity:.5}
+
+
+
+.reset a:hover {
+
+text-decoration:underline}
+
+
+
+footer {
+
+position:relative;
+
+margin-top:-4rem;
+
+font-size:.8rem}
+
+
+
+[data-state="begun"] footer {
+
+margin-top:4rem}
+
+
+
+footer p {
+
+margin-bottom:0}
+
+
+
+@media all and (min-width:620px){ 
+
+
+
+    body {
+
+    padding-top:1.5rem}
+
+    
+
+    header {
+
+    text-align:center;
+
+    margin-bottom:3rem}
+
+
+
+}
+
+
+
+@media all and (max-width:395px){
+
+
+
+    h1 {
+
+    font-size:2.5rem}
+
+
+
+    .q {
+
+    font-size:1rem}
+
+
+
+    .q p,
+
+    .results {
+
+    padding:1.25rem 1rem 1.5rem}
+
+
+
+    .flag {
+
+    margin:1.25rem -1rem -1.5rem}
+
+
+
+    .results h3 {
+
+    margin:0}
+
+
+
+    footer {
+
+    font-size:.7rem}
+
+
+
+    footer span {
+
+    display:none}
+
+
+
+}
+
+.languages {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.languages a {
+        padding: 0.7em;
+    }
+
+    .languages a:hover {
+        color: #22B85C;
+        text-decoration: none;
+    }
+
+    .languages .activeLink {
+        text-decoration: none;
+        color: #22B85C;
+    }
+
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="languages">
+
+<a href="index.html">English</a> <a href="index(es).html" class="activeLink">Español</a> <a href="index(dik).html">Thuɔŋjäŋ</a> <a href="index(zh-Hans).html">简体中文</a> <a href="index(vi).html">Tiếng Việt</a> <a href="index(ar).html">العربية</a>
+
+</div>
+
+
+    <div id="page">
+
+
+
+        <header>
+
+
+
+            <div class="icon"><span>S&#237;</span><span>No</span></div>
+
+
+
+            <h1>C&#243;mo acceder a Centrelink durante el COVID-19</h1>
+
+
+
+            <p>Una gu&#237;a sencilla y paso a paso para saber <b>si cumple con los requisitos para recibir apoyo </b>y, de ser as&#237;,<b> c&#243;mo obtenerlo</b>.</p>
+
+
+
+            <p class="updated">actualizada el martes 18 de agosto de 2020</p>
+
+
+
+        </header>
+
+
+
+        <main>
+
+
+
+            <div class="q start">
+
+                <div>Empiece aqu&#237;...</div>
+
+            </div>
+
+
+
+            <div class="q" data-id="s"> 
+
+                <p>&#191;Ya <b>recibe</b> alg&#250;n pago de Centrelink?</p>
+
+                <p class="opts"><a>S&#237;</a><a>No</a></p>
+
+            </div>  
+
+
+
+            <div class="q" data-id="s-n">
+
+                <p>&#191;Tiene una cuenta de myGov?</p>
+
+                <p class="opts"><a>S&#237;</a><a>No</a></p>
+
+            </div> 
+
+
+
+            <div class="q" data-id="s-n-y">
+
+                <p>&#191;Tiene su cuenta de myGov enlazada* a Medicare o la Oficina de Impuestos de Australia (ATO, por sus siglas en ingl&#233;s)? <span class="note">* Puede comprobarlo ingresando en su cuenta de <a href="https://my.gov.au/">myGov</a> y haciendo clic en &quot;Services&quot; en la barra superior para ver qu&#233; servicios tiene enlazados.</span></p>
+
+                <p class="opts"><a>S&#237;</a><a>No</a></p>
+
+            </div> 
+
+
+
+            <div class="q" data-id="s-n-y-y">
+
+                <p>Perfecto, ya tiene todo listo. Si alguna vez ha recibido pagos de Centrelink, significa que ya tiene un n&#250;mero de referencia, en ingl&#233;s es Centrelink Reference Number (CRN). Puede encontrar su CRN en alguna carta que le hayan enviado de Centrelink o en alguna tarjeta de concesi&#243;n. Es un n&#250;mero de 9 d&#237;gitos que termina con una letra en may&#250;scula. T&#233;ngalo a la mano para m&#225;s adelante. Sin embargo, <b>ya no es necesario tener un CRN</b> para registrar que tiene la intenci&#243;n de solicitar un pago: Centrelink lo(a) contactar&#225; para sacar su n&#250;mero si a&#250;n no lo tiene</p>
+
+                <p class="opts"><a>Siguiente</a></p>
+
+            </div>
+
+
+
+            <div class="q" data-id="s-n-y-y-y">
+
+                <p> Como consecuencia del COVID-19 o de la recesi&#243;n econ&#243;mica, <b>est&#225; pasando por alguna de las siguientes</b> dificultades:<br><br> <span class="left"> <span>Le han despedido</span> <span>Perdi&#243; el trabajo</span> <span>Redujeron sus turnos</span> <span>Perdi&#243; o redujo su trabajo por tener que cuidar de ni&#241;os peque&#241;os</span> <span>Perdi&#243; el trabajo debido al aislamiento</span> </span> </p>
+
+                <p class="opts"><a>S&#237;</a><a>No</a></p>
+
+            </div> 
+
+
+
+            <div class="q" data-id="s-y">
+
+                <p>&#191;Ha habido alg&#250;n cambio <b>en sus circunstancias </b> como resultado del COVID-19 o de la recesi&#243;n econ&#243;mica (p. ej. le han despedido, ha perdido su trabajo o le han reducido sus turnos?)</p>
+
+                <p class="opts"><a>S&#237;</a><a>No</a></p>
+
+            </div> 
+
+
+
+            <div class="q" data-id="s-y-y">
+
+
+
+                <p class="msg"><b>Nota</b>: Si perdi&#243;<b> su trabajo</b> o le <b>despidieron</b> antes del <b>1 de marzo de 2020</b> o en esa fecha, es posible que sus empleadores cumplan con los requisitos para el pago de &quot;JobKeeper&quot;. Este es un pago por parte del gobierno que permite que los empleadores conserven a sus empleados y les paguen al menos <b>$1 500</b> a la quincena. Hable con su(s) empleador(es) acerca de esta opci&#243;n.<br><br> Si usted <b>trabaja por su cuenta</b>, es posible que tambi&#233;n cumpla con los requisitos. <a href="https://www.ato.gov.au/general/JobKeeper-payment/">Encuentre m&#225;s informaci&#243;n aqu&#237;</a>. Mientras tanto,<b> es posible que a&#250;n cumpla con los requisitos para un pago de Centrelink</b>.</p>
+
+
+
+                <p>&#191;Ya<b> est&#225; recibiendo</b> alg&#250;n pago de JobSeeker (previamente llamado Newstart) o el pago para j&#243;venes en busca de empleo de Youth Allowance?</p>
+
+                <p class="opts"><a>S&#237;</a><a>No</a></p>
+
+            </div> 
+
+
+
+            <div class="results" data-id="s-n-y-y-y-y" data-end="yes">
+
+
+
+                <h3>Todo parece indicar que es posible que cumpla con los requisitos para el pago para personas en busca de empleo.</h3>
+
+
+
+                <p>Registre su intenci&#243;n de hacer una solicitud</p>
+
+
+
+                <ol>
+
+                    <li><b>Youth Allowance</b> (para j&#243;venes en busca de empleo) si tiene entre 16 y 21 a&#241;os</li> 
+
+                    <li><b>JobSeeker Payment</b> a partir de los 22 a&#241;os y hasta la edad establecida como <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">Edad para la Pensi&#243;n</a> (66 o m&#225;s a&#241;os)</li>  
+
+                    <li><b>Parenting Payment</b> si usted es la persona principal a cargo de un ni&#241;o peque&#241;o</li> 
+
+                </ol>
+
+
+
+                <p><b>Nota</b>: Cualquier persona que reciba estos pagos recibir&#225; tambi&#233;n el suplemento temporal <b>Coronavirus Supplement</b>, que es un pago adicional de <b>$550 a la quincena</b> adem&#225;s de su pago de apoyo a los ingresos.</p>
+
+
+
+                <p>Este es un pago temporal que est&#225; programado para terminar el 24 de septiembre de 2020. Despu&#233;s de esta fecha, el Coronavirus Supplement estar&#225; disponible por $250 a la quincena hasta el 31 de diciembre de 2020.</p>
+
+
+
+                <p>Vaya a <a href="https://my.gov.au/">myGov</a> para iniciar sesi&#243;n y comenzar el proceso.</p>
+
+
+
+                <div class="flag">
+
+
+
+                    <p>Si ha <b>perdido su trabajo</b> o le han <b>despedido</b> despu&#233;s del <b>1 de marzo de 2020</b> o en esa fecha, es posible que su(s) empleador(es) cumpla(n) con los requisitos para el pago de &quot;JobKeeper&quot;. Este es un pago por parte del gobierno que permite que los empleadores conserven a sus empleados y les paguen al menos $1 500 a la quincena. Hable con su(s) empleador(es) acerca de esta opci&#243;n.<br><br> Si usted <b>trabaja por su cuenta</b>, es posible que tambi&#233;n cumpla con los requisitos. <a href="https://www.ato.gov.au/general/JobKeeper-payment/">Encuentre m&#225;s informaci&#243;n aqu&#237;</a>. Mientras tanto, <b>es posible que a&#250;n cumpla con los requisitos para un pago de Centrelink</b>, y tiene que registrar su intenci&#243;n de solicitarlo. </p>
+
+
+
+                    <p>No <b>necesita</b> proporcionarle a Centrelink ning&#250;n estado de cuenta bancario, certificado de separaci&#243;n de empleo, ni carta de su empleador. Simplemente presente su intenci&#243;n de hacer una solicitud a trav&#233;s de Internet y Centrelink se pondr&#225; en contacto con usted si necesita m&#225;s informaci&#243;n.</p> 
+
+
+
+                </div>
+
+
+
+            </div> 
+
+
+
+            <div class="results" data-id="s-n-y-y-y-n">
+
+
+
+                <p>Es posible que cumpla con los requisitos para<b> alg&#250;n otro tipo de pago de Centrelink</b>. Consulte <a href="https://www.centrelink.gov.au/custsite_pfe/pymtfinderest/paymentFinderEstimatorPage.jsf?wec-appid=pymtfinderest">el sitio web de Centrelink</a> para ver para qu&#233; tipos de apoyo existen y si cumple con los requisitos.<br><br> Para m&#225;s informaci&#243;n, tambi&#233;n puede consultar las hojas de informaci&#243;n <a href="http://ejaustralia.org.au/self-help/">aqu&#237;</a> o llamar al <a href="http://ejaustralia.org.au/legal-help-centrelink/">centro comunitario legal de su localidad</a>.</p> 
+
+
+
+            </div>
+
+
+
+            <div class="results" data-id="s-n-y-n">
+
+      
+
+                <p>Ser&#225; necesario que <b>ingrese</b> en <a href="https://my.gov.au">myGov</a> para enlazar su cuenta. Puede usar el tutorial de c&#243;mo enlazar su cuenta con Medicare <a href="https://www.servicesaustralia.gov.au/individuals/online-help/link-service-mygov-without-online-account">aqu&#237;</a> o con la ATO <a href="https://www.ato.gov.au/General/Online-services/Individuals-and-sole-traders/#BK_2LinkyourmyGovaccounttotheATO">aqu&#237;</a>.<br><br> Una vez que lo haya hecho, haga clic en &quot;S&#237;&quot; en la pregunta de arriba para continuar.</p>
+
+
+
+            </div>
+
+
+
+            <div class="results" data-id="s-n-n">
+
+
+
+                <p>Vaya a <a href="https://my.gov.au">myGov</a> para registrarse para crear una cuenta. Necesitar&#225; <b>una direcci&#243;n de correo electr&#243;nico para registrarse</b>.</p>
+
+                
+
+                <p>Una vez que tenga lista su cuenta, haga clic en &quot;S&#237;&quot; en la pregunta de arriba para continuar.</p>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="results" data-id="s-y-y-y" data-end="yes">
+
+
+
+                <h3>Avise a Centrelink si sus circunstancias cambian</h3>
+
+
+
+                <p>(p. ej., si los ingresos de su pareja han cambiado, o si le est&#225;n dando menos turnos)</p>  
+
+
+
+                <p>Centrelink est&#225; experimentando muchos retrasos. <b>Por favor no acuda a la oficina de Centrelink de su localidad</b>, en lugar de eso, h&#225;galo:</p>
+
+
+
+                <ol>
+
+                    <li><b>Por Internet</b>: Puede actualizar sus circunstancias a trav&#233;s de su cuenta de <a href="https://my.gov.au/">myGov</a></li>
+
+                    <li><b>Por tel&#233;fono</b>: Si no puede acceder a su cuenta de <a href="https://my.gov.au/">myGov</a>, puede llamar a Centrelink pero prep&#225;rese para pasar tiempo en espera</li>
+
+                </ol>
+
+
+
+                <p>Recibir&#225; <b>autom&#225;ticamente</b>:</p>
+
+
+
+                <ol>
+
+                    <li>El suplemento <b>Coronavirus Supplement</b>*</li>
+
+                </ol>
+
+
+
+                <p>El Coronavirus Supplement es un pago temporal. Aquellas personas que reciben JobSeeker recibir&#225;n el suplemento hasta el 24 de septiembre de 2020, fecha programada para su finalizaci&#243;n. Despu&#233;s de esta fecha, el Coronavirus Supplement estar&#225; disponible por $250 a la quincena hasta el 31 de diciembre de 2020.</p>
+
+
+
+                <p>* adicionalmente, un<b> pago temporal de $550 a la quincena</b> para aquellas personas que est&#233;n recibiendo ciertos pagos.  Compruebe si cumple con los requisitos <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#cor">aqu&#237;</a>.</p> 
+
+
+
+                <p>Encuentre m&#225;s informaci&#243;n <a href="http://ejaustralia.org.au/self-help/">aqu&#237;</a>.</p>
+
+
+
+                <div class="flag">
+
+
+
+                    <p>Nota: <b>La obligaci&#243;n mutua se reanud&#243;</b> el 4 de agosto despu&#233;s de haber sido suspendida de forma temporal debido al COVID-19. Esto significa que es posible que su pago de JobSeeker sea cancelado si rechaza alg&#250;n trabajo apropiado sin tener alguna excusa razonable.</p>
+
+
+
+                </div>
+
+
+
+
+
+            </div> 
+
+
+
+            <div class="results" data-id="s-y-y-n" data-end="yes">
+
+
+
+                <h3>Todo parece indicar que es posible que cumpla con los requisitos para el pago para personas en busca de empleo.</h3>
+
+
+
+                <h3>Registre su intenci&#243;n de hacer una solicitud</h3>
+
+
+
+                <ol>
+
+                    <li><b>Youth Allowance</b> (para j&#243;venes en busca de empleo) si tiene entre 16 y 21 a&#241;os</li> 
+
+                    <li><b>JobSeeker Payment</b> a partir de los 22 a&#241;os y hasta la edad establecida como <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">Edad para la Pensi&#243;n</a> (66 o m&#225;s a&#241;os)</li>  
+
+                    <li><b>Parenting Payment</b> si usted es la persona principal a cargo de un ni&#241;o peque&#241;o</li> 
+
+                </ol>
+
+                
+
+                <p>Cualquier persona que reciba estos pagos recibir&#225; el suplemento temporal <b>Coronavirus Supplement</b>, que es un pago adicional de<b> $550 a la quincena</b> adem&#225;s de su pago de apoyo a los ingresos.</p>
+
+
+
+                <p>El Coronavirus Supplement es un pago temporal. Aquellas personas que reciben JobSeeker recibir&#225;n el suplemento hasta el 24 de septiembre de 2020, fecha programada para su finalizaci&#243;n. Despu&#233;s de esta fecha, el Coronavirus Supplement estar&#225; disponible por $250 a la quincena hasta el 31 de diciembre de 2020.</p>
+
+
+
+                <p>Vaya a <a href="https://my.gov.au/">myGov</a> para iniciar sesi&#243;n y comenzar el proceso.</p>
+
+
+
+                <p>No <b>necesita</b> proporcionarle a Centrelink ning&#250;n estado de cuenta bancario, certificado de separaci&#243;n de empleo, ni carta de su empleador. Simplemente presente su intenci&#243;n de hacer una solicitud a trav&#233;s de Internet y Centrelink se pondr&#225; en contacto con usted si necesita m&#225;s informaci&#243;n.</p> 
+
+
+
+                <div class="flag">
+
+
+
+                    <p>Nota: <b>La obligaci&#243;n mutua se reanud&#243;</b> el 4 de agosto despu&#233;s de haber sido suspendida de forma temporal debido al COVID-19. Esto significa que es posible que su pago de JobSeeker sea cancelado si rechaza alg&#250;n trabajo apropiado sin tener alguna excusa razonable.</p>
+
+
+
+                </div>
+
+                
+
+            </div> 
+
+
+
+            <div class="results" data-id="s-y-n" data-end="yes">
+
+
+
+                <h3>No haga nada.</h3>
+
+
+
+                <p>Recibir&#225; <b>autom&#225;ticamente</b>:</p>
+
+
+
+                <ol>
+
+                    <li>El suplemento <b>Coronavirus Supplement</b></li>
+
+                </ol>
+
+
+
+                <p>El Coronavirus Supplement en un pago adicional temporal de<b> $550 a la quincena</b> para aquellas personas que est&#233;n recibiendo ciertos pagos.  Compruebe si cumple con los requisitos <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#cor">aqu&#237;</a>.</p> 
+
+
+
+                <p>Est&#225; programado para finalizar el 24 de septiembre de 2020. Despu&#233;s de esta fecha, el Coronavirus Supplement estar&#225; disponible por $250 a la quincena hasta el 31 de diciembre de 2020.</p>
+
+
+
+                <p>Encuentre m&#225;s informaci&#243;n <a href="http://ejaustralia.org.au/self-help/">aqu&#237;</a>.</p>
+
+
+
+                <div class="flag">
+
+
+
+                    <p>Nota: Los requisitos de <b>obligaci&#243;n mutua</b> para el pago de JobSeeker, Youth Allowance como joven en busca de empleo o el Parenting Payment, se suspendieron temporalmente debido al COVID-19. Se reanudaron el 4 de agosto de 2020. Esto significa que es posible que su pago de JobSeeker sea cancelado si ha rechazado alg&#250;n trabajo apropiado sin tener una excusa razonable.</p> 
+
+
+
+                </div>
+
+
+
+            </div>  
+
+
+
+            <div id="finish">
+
+                
+
+                <a href="" class="download" download="centrelink-flowchart.png"><span>↓</span> &#191;Desea descargar el esquema</a>
+
+                <p class="reset">o<a> empezar de nuevo?</a></p>
+
+            
+
+            </div>
+
+
+
+        </main>
+
+
+
+        <footer>
+
+            
+
+            <p>Vaya a <a href="https://www.servicesaustralia.gov.au/individuals/centrelink">Centrelink</a> →<br> Existe m&#225;s <span>ayuda e informaci&#243;n disponible</span> en <a href="http://ejaustralia.org.au/self-help/">Economic Justice Australia</a> →<br> La informaci&#243;n m&#225;s reciente sobre el COVID-19 del<a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert"> Departmento de Salud</a> →</p>
+
+            <p>Creado por <a href="https://twitter.com/SophieTrevitt">@SophieTrevitt</a></p>
+
+
+
+        </footer>
+
+
+
+    </div>
+
+
+
+<script>
+
+
+
+'use strict';
+
+
+
+var $body = document.querySelector('body'),
+
+    $start = document.querySelector('[data-id="s"]'),
+
+    $questions = document.querySelectorAll('.q'),
+
+    $download = document.querySelector('.download'),
+
+    isIE11 = false
+
+
+
+/* IE11 */
+
+if (window.NodeList && !NodeList.prototype.forEach){
+
+    NodeList.prototype.forEach = Array.prototype.forEach;
+
+    isIE11 = true;
+
+    $body.className = 'ie11'
+
+}
+
+
+
+if ('scrollRestoration' in history) {
+
+  history.scrollRestoration = 'manual'
+
+}
+
+
+
+document
+
+    .querySelectorAll('a[href]')
+
+    .forEach(function ($node,i){
+
+        $node.setAttribute('target', '_blank');
+
+});
+
+
+
+document
+
+    .querySelectorAll('.opts a')
+
+    .forEach(function ($node,i){
+
+
+
+    $node.addEventListener('click', function(e){
+
+
+
+        var $parent = $node.parentNode,
+
+            $q = $parent.parentNode,
+
+            currentQ = $q.getAttribute('data-id'),
+
+            answer = $node.textContent,
+
+            selected = (answer=='No')? 'n': 'y'    
+
+
+
+            $q.className = 'q '+selected
+
+
+
+            var next = currentQ+'-'+selected,
+
+                $next = document.querySelector('[data-id="'+next+'"]')
+
+
+
+            // SHOW
+
+            $next.setAttribute('data-show','yes');
+
+            $body.setAttribute('data-state','begun');
+
+
+
+            if ($next.getAttribute('class') == 'results'){
+
+
+
+                $body.setAttribute('data-result','yes');
+
+                $download.setAttribute('href','charts-es/'+next+'.png');
+
+
+
+            }
+
+            else {
+
+                $body.removeAttribute('data-result');
+
+            } 
+
+
+
+            //CLEAN UP NOT CURRENT!
+
+           cleanOtherOptions(next)
+
+           scroll.animateScroll(getOffsetTop($next) - 20)
+
+           
+
+    })
+
+})
+
+
+
+function cleanOtherOptions(next){
+
+
+
+    //check if part of current tree
+
+    document
+
+        .querySelectorAll('[data-show="yes"]')
+
+        .forEach(function ($node,i){
+
+            if (next.indexOf($node.getAttribute('data-id'))<0){
+
+                $node.removeAttribute('data-show');
+
+                $node.className = $node.className.replace(/\s(n|y)/gi,'')
+
+            }
+
+    })
+
+}
+
+
+
+document
+
+    .querySelector('.reset a')
+
+    .addEventListener('click', function(e){
+
+
+
+        document
+
+            .querySelectorAll('[data-show="yes"]')
+
+            .forEach(function ($node,i){
+
+                $node.removeAttribute('data-show');
+
+                $node.className = $node.className.replace(/\s(n|y)/gi,'')
+
+        })
+
+
+
+        $body.removeAttribute('data-result');
+
+        $body.removeAttribute('data-state');
+
+        $start.setAttribute('class','q');
+
+        scroll.animateScroll(0)
+
+        
+
+})
+
+
+
+
+
+/*! smooth-scroll v16.1.2 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
+
+window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(e){var t,n=(this.document||this.ownerDocument).querySelectorAll(e),o=this;do{for(t=n.length;0<=--t&&n.item(t)!==o;);}while(t<0&&(o=o.parentElement));return o}),(function(){if("function"==typeof window.CustomEvent)return;function e(e,t){t=t||{bubbles:!1,cancelable:!1,detail:void 0};var n=document.createEvent("CustomEvent");return n.initCustomEvent(e,t.bubbles,t.cancelable,t.detail),n}e.prototype=window.Event.prototype,window.CustomEvent=e})(),(function(){for(var r=0,e=["ms","moz","webkit","o"],t=0;t<e.length&&!window.requestAnimationFrame;++t)window.requestAnimationFrame=window[e[t]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[e[t]+"CancelAnimationFrame"]||window[e[t]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(e,t){var n=(new Date).getTime(),o=Math.max(0,16-(n-r)),a=window.setTimeout((function(){e(n+o)}),o);return r=n+o,a}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(e){clearTimeout(e)})})(),(function(e,t){"function"==typeof define&&define.amd?define([],(function(){return t(e)})):"object"==typeof exports?module.exports=t(e):e.SmoothScroll=t(e)})("undefined"!=typeof global?global:"undefined"!=typeof window?window:this,(function(q){"use strict";var I={ignore:"[data-scroll-ignore]",header:null,topOnEmptyHash:!0,speed:500,speedAsDuration:!1,durationMax:null,durationMin:null,clip:!0,offset:0,easing:"easeInOutCubic",customEasing:null,updateURL:!0,popstate:!0,emitEvents:!0},F=function(){var n={};return Array.prototype.forEach.call(arguments,(function(e){for(var t in e){if(!e.hasOwnProperty(t))return;n[t]=e[t]}})),n},r=function(e){"#"===e.charAt(0)&&(e=e.substr(1));for(var t,n=String(e),o=n.length,a=-1,r="",i=n.charCodeAt(0);++a<o;){if(0===(t=n.charCodeAt(a)))throw new InvalidCharacterError("Invalid character: the input contains U+0000.");1<=t&&t<=31||127==t||0===a&&48<=t&&t<=57||1===a&&48<=t&&t<=57&&45===i?r+="\\"+t.toString(16)+" ":r+=128<=t||45===t||95===t||48<=t&&t<=57||65<=t&&t<=90||97<=t&&t<=122?n.charAt(a):"\\"+n.charAt(a)}return"#"+r},L=function(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight)},x=function(e){return e?(t=e,parseInt(q.getComputedStyle(t).height,10)+e.offsetTop):0;var t},H=function(e,t,n,o){if(t.emitEvents&&"function"==typeof q.CustomEvent){var a=new CustomEvent(e,{bubbles:!0,detail:{anchor:n,toggle:o}});document.dispatchEvent(a)}};return function(o,e){var A,a,O,C,M={};M.cancelScroll=function(e){cancelAnimationFrame(C),C=null,e||H("scrollCancel",A)},M.animateScroll=function(i,c,e){M.cancelScroll();var s=F(A||I,e||{}),u="[object Number]"===Object.prototype.toString.call(i),t=u||!i.tagName?null:i;if(u||t){var l=q.pageYOffset;s.header&&!O&&(O=document.querySelector(s.header));var n,o,a,m,r,d,f,h,p=x(O),g=u?i:(function(e,t,n,o){var a=0;if(e.offsetParent)for(;a+=e.offsetTop,e=e.offsetParent;);return a=Math.max(a-t-n,0),o&&(a=Math.min(a,L()-q.innerHeight)),a})(t,p,parseInt("function"==typeof s.offset?s.offset(i,c):s.offset,10),s.clip),y=g-l,v=L(),w=0,S=(n=y,a=(o=s).speedAsDuration?o.speed:Math.abs(n/1e3*o.speed),o.durationMax&&a>o.durationMax?o.durationMax:o.durationMin&&a<o.durationMin?o.durationMin:parseInt(a,10)),E=function(e,t){var n,o,a,r=q.pageYOffset;if(e==t||r==t||(l<t&&q.innerHeight+r)>=v)return M.cancelScroll(!0),o=t,a=u,0===(n=i)&&document.body.focus(),a||(n.focus(),document.activeElement!==n&&(n.setAttribute("tabindex","-1"),n.focus(),n.style.outline="none"),q.scrollTo(0,o)),H("scrollStop",s,i,c),!(C=m=null)},b=function(e){var t,n,o;m||(m=e),w+=e-m,d=l+y*(n=r=1<(r=0===S?0:w/S)?1:r,"easeInQuad"===(t=s).easing&&(o=n*n),"easeOutQuad"===t.easing&&(o=n*(2-n)),"easeInOutQuad"===t.easing&&(o=n<.5?2*n*n:(4-2*n)*n-1),"easeInCubic"===t.easing&&(o=n*n*n),"easeOutCubic"===t.easing&&(o=--n*n*n+1),"easeInOutCubic"===t.easing&&(o=n<.5?4*n*n*n:(n-1)*(2*n-2)*(2*n-2)+1),"easeInQuart"===t.easing&&(o=n*n*n*n),"easeOutQuart"===t.easing&&(o=1- --n*n*n*n),"easeInOutQuart"===t.easing&&(o=n<.5?8*n*n*n*n:1-8*--n*n*n*n),"easeInQuint"===t.easing&&(o=n*n*n*n*n),"easeOutQuint"===t.easing&&(o=1+--n*n*n*n*n),"easeInOutQuint"===t.easing&&(o=n<.5?16*n*n*n*n*n:1+16*--n*n*n*n*n),t.customEasing&&(o=t.customEasing(n)),o||n),q.scrollTo(0,Math.floor(d)),E(d,g)||(C=q.requestAnimationFrame(b),m=e)};0===q.pageYOffset&&q.scrollTo(0,0),f=i,h=s,u||history.pushState&&h.updateURL&&history.pushState({smoothScroll:JSON.stringify(h),anchor:f.id},document.title,f===document.documentElement?"#top":"#"+f.id),"matchMedia"in q&&q.matchMedia("(prefers-reduced-motion)").matches?q.scrollTo(0,Math.floor(g)):(H("scrollStart",s,i,c),M.cancelScroll(!0),q.requestAnimationFrame(b))}};var t=function(e){if(!e.defaultPrevented&&!(0!==e.button||e.metaKey||e.ctrlKey||e.shiftKey)&&"closest"in e.target&&(a=e.target.closest(o))&&"a"===a.tagName.toLowerCase()&&!e.target.closest(A.ignore)&&a.hostname===q.location.hostname&&a.pathname===q.location.pathname&&/#/.test(a.href)){var t,n;try{t=r(decodeURIComponent(a.hash))}catch(e){t=r(a.hash)}if("#"===t){if(!A.topOnEmptyHash)return;n=document.documentElement}else n=document.querySelector(t);(n=n||"#top"!==t?n:document.documentElement)&&(e.preventDefault(),(function(e){if(history.replaceState&&e.updateURL&&!history.state){var t=q.location.hash;t=t||"",history.replaceState({smoothScroll:JSON.stringify(e),anchor:t||q.pageYOffset},document.title,t||q.location.href)}})(A),M.animateScroll(n,a))}},n=function(e){if(null!==history.state&&history.state.smoothScroll&&history.state.smoothScroll===JSON.stringify(A)){var t=history.state.anchor;"string"==typeof t&&t&&!(t=document.querySelector(r(history.state.anchor)))||M.animateScroll(t,null,{updateURL:!1})}};M.destroy=function(){A&&(document.removeEventListener("click",t,!1),q.removeEventListener("popstate",n,!1),M.cancelScroll(),C=O=a=A=null)};return (function(){if(!("querySelector"in document&&"addEventListener"in q&&"requestAnimationFrame"in q&&"closest"in q.Element.prototype))throw"Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.";M.destroy(),A=F(I,e||{}),O=A.header?document.querySelector(A.header):null,document.addEventListener("click",t,!1),A.updateURL&&A.popstate&&q.addEventListener("popstate",n,!1)})(),M}}));
+
+
+
+/* (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com */
+
+var getOffsetTop=function(f){var t=0;if(f.offsetParent)for(;f;)t+=f.offsetTop,f=f.offsetParent;return t>=0?t:0};
+
+
+
+var scroll = new SmoothScroll(null, {
+
+   speed: 1000,
+
+   easing: 'easeInOutQuad',
+
+   clip: true
+
+})
+
+
+
+</script>
+
+</body>
+
+</html>

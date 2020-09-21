@@ -1,0 +1,1433 @@
+<!doctype html>
+
+<html lang="vi" dir="ltr">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <link rel="icon" href="icon.png" sizes="192x192">
+
+	<title>Nhận trợ cấp Centrelink trong thời COVID-19 - Hướng dẫn từng bước đơn giản.</title>
+
+	<meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:creator" content="@SophieTrevitt">
+
+	<meta name="twitter:title" content="Nhận trợ cấp Centrelink trong thời COVID-19">
+
+	<meta name="twitter:description" content="Hướng dẫn từng bước đơn giản để xem quý vị có hội đủ điều kiện để nhận trợ cấp hay không, và nếu có, làm sao để nhận được trợ cấp.">
+
+    <meta name="twitter:image:src" content="https://canigetcentrelink.com.au/share.png">
+
+	<meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://canigetcentrelink.com.au">
+
+	<meta property="og:title" content="Nhận trợ cấp Centrelink trong thời COVID-19">
+
+	<meta property="og:description" content="Hướng dẫn từng bước đơn giản để xem quý vị có hội đủ điều kiện để nhận trợ cấp hay không, và nếu có, làm sao để nhận được trợ cấp.">
+
+    <meta property="og:image" content="https://canigetcentrelink.com.au/share.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&display=hide" rel="stylesheet">
+
+	<style>
+
+*, 
+
+*:before, 
+
+*:after {
+
+box-sizing:inherit}
+
+
+
+html {
+
+box-sizing:border-box;
+
+min-height:100%;
+
+-webkit-font-smoothing:antialiased;
+
+font-size:18px}
+
+
+
+body {
+
+padding:.5rem 1rem 1rem;
+
+margin:0;
+
+background:#fff;
+
+color:#0D0B0B;
+
+font-family:'IBM Plex Sans', sans-serif;
+
+font-size:1rem;
+
+min-height:100%;
+
+font-weight:400;
+
+letter-spacing:-.025em}
+
+
+
+a {
+
+color:#0D0B0B;
+
+cursor:pointer;
+
+border:0}
+
+
+
+a[href]:hover {
+
+color:#0563FF;
+
+transition:.25s}
+
+
+
+b {
+
+font-weight:700}
+
+
+
+#page {
+
+margin:0 auto;
+
+max-width:380px}
+
+
+
+header {
+
+margin-bottom:2rem}
+
+
+
+.icon {
+
+display:flex;
+
+width:52px;
+
+margin:1rem auto .25rem;
+
+border:2px solid #0D0B0B;
+
+text-align:center;
+
+font-size:10px;
+
+opacity:1}
+
+
+
+.icon span {
+
+width:40px;
+
+height:25px;
+
+line-height:25px;
+
+background:#fff}
+
+
+
+.icon span:first-child {
+
+border-right:1px solid #0D0B0B}
+
+
+
+h1 {
+
+margin:0;
+
+font-weight:200;
+
+font-size:3rem;
+
+line-height:1.1;
+
+letter-spacing:-.05em;
+
+text-align:center}
+
+
+
+header p {
+
+border-top:1px solid #0D0B0B;
+
+margin:.75rem 0 0;
+
+padding:.5rem 0 .25rem;
+
+font-size:16px}
+
+
+
+.updated {
+
+border:0;
+
+margin:0;
+
+padding-top:0;
+
+font-size:12px;
+
+opacity:.5}
+
+
+
+.q {
+
+display:none;
+
+position:relative;
+
+padding-bottom:12rem;
+
+text-align:center;
+
+font-size:1.2rem}
+
+
+
+.start,
+
+[data-id="s"],
+
+[data-show="Có"] {
+
+display:block}
+
+
+
+.start:before,
+
+.q:before {
+
+content:'';
+
+position:absolute;
+
+top:0;
+
+bottom:0;
+
+left:25%;
+
+border-left:2px solid #0D0B0B;
+
+z-index:0;
+
+opacity:0;
+
+transition:opacity .25s}
+
+
+
+.start:before,
+
+.y:before,
+
+.n:before {
+
+opacity:1}
+
+
+
+.n:before {
+
+left:75%}
+
+
+
+.start:before  {
+
+left:50%}
+
+
+
+.start {
+
+padding-bottom:3rem}
+
+
+
+.start div {
+
+position:relative;
+
+margin:auto;
+
+border:2px solid #0D0B0B;
+
+padding:4px 8px;
+
+background:#DBE7FA;
+
+font-size:.75rem;
+
+z-index:1;
+
+width:50%;
+
+white-space:nowrap}
+
+
+
+.q p {
+
+position:relative;
+
+margin:0;
+
+padding:1.5rem 2rem 1.75rem;
+
+background:#FFF3CD;
+
+border:2px solid #0D0B0B;
+
+z-index:1;
+
+line-height:1.15}
+
+
+
+.q p.msg {
+
+background:#EE9E4E;
+
+margin-bottom:4rem}
+
+
+
+.q .left {
+
+display:inline-block;
+
+text-align:left}
+
+
+
+.q .left span {
+
+display:block;
+
+padding-left:1rem;
+
+position:relative}
+
+
+
+.q .left span:before {
+
+content:'•';
+
+position:absolute;
+
+left:0;
+
+top:0}
+
+
+
+.q p.msg:after {
+
+content:'';
+
+position:absolute;
+
+margin-top:2px;
+
+top:100%;
+
+left:50%;
+
+height:5rem;
+
+border-left:2px solid #0D0B0B;
+
+z-index:0;
+
+transition:opacity .25s}
+
+
+
+.y p.msg:after,
+
+.n p.msg:after {
+
+opacity:0}
+
+
+
+.q .note {
+
+display:block;
+
+margin:.5rem -1rem -.5rem;
+
+font-size:.75rem;
+
+opacity:.66}
+
+
+
+.q .opts {
+
+display:flex;
+
+border-top:0;
+
+padding:0;
+
+background:#fff;
+
+font-size:1rem}
+
+
+
+.q .opts a {
+
+width:50%;
+
+padding:.75rem;
+
+display:block;
+
+-webkit-user-select:none;
+
+transition:background .25s}
+
+
+
+.y .opts a:first-child,
+
+.n .opts a:last-child {
+
+background:#22B85C;
+
+color:#fff;
+
+font-weight:700;
+
+letter-spacing:normal}
+
+
+
+.q .opts a:first-child {
+
+border-right:2px solid #0D0B0B}
+
+
+
+.q[data-id="s-n-y-y"] .opts a:first-child {
+
+border:0;
+
+width:100%}
+
+
+
+.y .opts a:first-child,
+
+.n .opts a:last-child {
+
+cursor:default;
+
+pointer-events:none}
+
+
+
+.n[data-id="s"]:after {
+
+content:'Hãy hít một hơi thật sâu ...';
+
+position:absolute;
+
+left:75%;
+
+border:2px solid #0D0B0B;
+
+padding:4px 8px;
+
+background:#DBE7FA;
+
+font-size:.75rem;
+
+white-space:nowrap;
+
+transform:translate(-50%, 120px)}
+
+
+
+.results {
+
+display:none;
+
+padding:1.25rem 1.5rem;
+
+border:2px solid #0D0B0B;
+
+background:#DBDBDB}
+
+
+
+[data-show="Có"]{
+
+display:block}
+
+
+
+.results h3 {
+
+text-align:center;
+
+font-size:1.5rem;
+
+margin:0 1.5rem;
+
+line-height:1.1}
+
+
+
+.results > p:first-child {
+
+margin:0} 
+
+
+
+.results ol {
+
+padding:0;
+
+margin:1rem 0;
+
+list-style: none;
+
+counter-reset:c}
+
+
+
+.results li {
+
+padding:0 0 12px 40px;
+
+margin:0;
+
+counter-increment:c;
+
+position:relative}
+
+
+
+.results li:before {
+
+content:counter(c);
+
+position:absolute;
+
+top:-2px;
+
+left:0;
+
+line-height:30px;
+
+width:30px;
+
+height:30px;
+
+color:#fff;
+
+text-align:center;
+
+font-weight:700;
+
+border-radius:50%;
+
+background:#EE9E4E}
+
+
+
+.flag {
+
+border-top:2px solid #0D0B0B;
+
+background:#EE9E4E;
+
+margin:1.5rem -1.5rem -1.25rem;
+
+padding:1.25rem 1.5rem}
+
+
+
+.flag > p {
+
+margin-top:0}
+
+
+
+.flag > p:last-child {
+
+margin-bottom:0}
+
+
+
+#finish {
+
+display:none;
+
+margin-bottom:12rem;
+
+text-align:center}
+
+
+
+[data-result="Có"] #finish  {
+
+display:block}
+
+
+
+a.download  {
+
+margin:.5rem 0;
+
+display:block;
+
+border:2px solid #0D0B0B;
+
+padding:.75rem;
+
+font-size:.75rem;
+
+text-decoration:none;
+
+text-transform:uppercase;
+
+transition:background .25s}
+
+
+
+.ie11 .download  {
+
+display:none}
+
+
+
+a.download:hover {
+
+color:#fff;
+
+background:#999}
+
+
+
+.reset {
+
+font-size:.75rem;
+
+opacity:.5}
+
+
+
+.reset a:hover {
+
+text-decoration:underline}
+
+
+
+footer {
+
+position:relative;
+
+margin-top:-4rem;
+
+font-size:.8rem}
+
+
+
+[data-state="begun"] footer {
+
+margin-top:4rem}
+
+
+
+footer p {
+
+margin-bottom:0}
+
+
+
+@media all and (min-width:620px){ 
+
+
+
+    body {
+
+    padding-top:1.5rem}
+
+    
+
+    header {
+
+    text-align:center;
+
+    margin-bottom:3rem}
+
+
+
+}
+
+
+
+@media all and (max-width:395px){
+
+
+
+    h1 {
+
+    font-size:2.5rem}
+
+
+
+    .q {
+
+    font-size:1rem}
+
+
+
+    .q p,
+
+    .results {
+
+    padding:1.25rem 1rem 1.5rem}
+
+
+
+    .flag {
+
+    margin:1.25rem -1rem -1.5rem}
+
+
+
+    .results h3 {
+
+    margin:0}
+
+
+
+    footer {
+
+    font-size:.7rem}
+
+
+
+    footer span {
+
+    display:none}
+
+
+
+}
+
+.languages {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.languages a {
+        padding: 0.7em;
+    }
+
+    .languages a:hover {
+        color: #22B85C;
+        text-decoration: none;
+    }
+
+    .languages .activeLink {
+        text-decoration: none;
+        color: #22B85C;
+    }
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="languages">
+
+<a href="index.html">English</a> <a href="index(es).html">Español</a> <a href="index(dik).html">Thuɔŋjäŋ</a> <a href="index(zh-Hans).html">简体中文</a> <a href="index(vi).html" class="activeLink">Tiếng Việt</a> <a href="index(ar).html">العربية</a>
+
+</div>
+
+
+    <div id="page">
+
+
+
+        <header>
+
+
+
+            <div class="icon"><span>C&#211;</span><span>KH&#212;NG</span></div>
+
+
+
+            <h1>Nhận trợ cấp Centrelink trong thời COVID-19</h1>
+
+
+
+            <p>Hướng dẫn từng bước đơn giản để xem qu&#253; vị <b>c&#243; hội đủ điều kiện để nhận trợ cấp hay kh&#244;ng</b>, v&#224; nếu c&#243;, <b>l&#224;m sao để nhận được trợ cấp</b>.</p>
+
+
+
+            <p class="updated">cập nhật v&#224;o thứ Ba, ng&#224;y 18 th&#225;ng 8 năm 2020</p>
+
+
+
+        </header>
+
+
+
+        <main>
+
+
+
+            <div class="q start">
+
+                <div>H&#227;y bắt đầu từ đ&#226;y...</div>
+
+            </div>
+
+
+
+            <div class="q" data-id="s"> 
+
+                <p>Qu&#253; vị <b>c&#243; đang nhận </b>một trợ cấp Centrelink rồi kh&#244;ng?</p>
+
+                <p class="opts"><a>C&#243;</a> <a>Kh&#244;ng</a></p>
+
+            </div>  
+
+
+
+            <div class="q" data-id="s-n">
+
+                <p>Qu&#253; vị c&#243; t&#224;i khoản myGov kh&#244;ng?</p>
+
+                <p class="opts"><a>C&#243;</a> <a>Kh&#244;ng</a></p>
+
+            </div> 
+
+
+
+            <div class="q" data-id="s-n-y">
+
+                <p>T&#224;i khoản myGov của qu&#253; vị đ&#227; được kết nối* với Medicare hoặc Sở Thuế vụ &#218;c (ATO) chưa? <span class="note">* H&#227;y kiểm tra bằng c&#225;ch đăng nhập v&#224;o t&#224;i khoản <a href="https://my.gov.au/">myGov</a> của qu&#253; vị v&#224; nhấp chuột v&#224;o &quot;C&#225;c dịch vụ&quot; tr&#234;n thanh c&#244;ng cụ để xem những dịch vụ n&#224;o đ&#227; được kết nối.</span></p>
+
+                <p class="opts"><a>C&#243;</a> <a>Kh&#244;ng</a></p>
+
+            </div> 
+
+
+
+            <div class="q" data-id="s-n-y-y">
+
+                <p>Tuyệt vời, b&#226;y giờ mọi thứ đ&#227; được thiết lập xong cho qu&#253; vị. Nếu trước đ&#226;y qu&#253; vị đ&#227; nhận trợ cấp Centrelink th&#236; qu&#253; vị đ&#227; c&#243; Số Tham chiếu Centrelink (CRN) rồi. Qu&#253; vị c&#243; thể t&#236;m thấy số CRN của m&#236;nh trong thư từ v&#224; thẻ giảm gi&#225; của Centrelink. Đ&#243; l&#224; một số c&#243; 9 chữ số kết th&#250;c bằng một chữ c&#225;i viết hoa. H&#227;y giữ số n&#224;y để tiện sử dụng về sau. Tuy nhi&#234;n, qu&#253; vị <b>kh&#244;ng c&#242;n cần số CRN</b> để đăng k&#253; &#253; định xin trợ cấp của m&#236;nh - sau n&#224;y Centrelink sẽ li&#234;n hệ với qu&#253; vị để cấp cho qu&#253; vị một số nếu qu&#253; vị chưa c&#243;</p>
+
+                <p class="opts"><a>Kế tiếp</a></p>
+
+            </div>
+
+
+
+            <div class="q" data-id="s-n-y-y-y">
+
+                <p> Do bệnh dịch COVID-19 hay suy tho&#225;i kinh tế <b>điều n&#224;o sau đ&#226;y</b> đ&#227; xảy ra với qu&#253; vị: <br><br> <span class="left"> <span>Bị tạm ngừng l&#224;m việc</span> <span> Bị mất việc</span> <span>Bị giảm ca l&#224;m việc</span> <span> Bị mất việc hay c&#244;ng việc bị giảm do phải chăm s&#243;c cho con nhỏ</span> <span> Kh&#244;ng được l&#224;m việc do phải tự c&#225;ch ly</span></span> </p>
+
+                <p class="opts"><a>C&#243;</a> <a>Kh&#244;ng</a></p>
+
+            </div> 
+
+
+
+            <div class="q" data-id="s-y">
+
+                <p><b>Ho&#224;n cảnh của qu&#253; vị c&#243; thay đổi</b> do COVID-19 hay suy tho&#225;i kinh tế kh&#244;ng? (V&#237; dụ: qu&#253; vị c&#243; bị tạm ngừng l&#224;m việc, mất việc hay bị giảm ca l&#224;m việc kh&#244;ng?)</p>
+
+                <p class="opts"><a>C&#243;</a> <a>Kh&#244;ng</a></p>
+
+            </div> 
+
+
+
+            <div class="q" data-id="s-y-y">
+
+
+
+                <p class="msg"> <b>Lưu &#253;</b>: Nếu qu&#253; vị <b>bị mất việc</b> hoặc đ&#227; <b>tạm ngừng l&#224;m việc</b> v&#224;o hay sau ng&#224;y <b>1 th&#225;ng 3 năm 2020</b> th&#236; chủ nh&#226;n của qu&#253; vị c&#243; thể hội đủ điều kiện cho trợ cấp &quot;JobKeeper&quot;. Đ&#226;y l&#224; trợ cấp của ch&#237;nh phủ để gi&#250;p chủ nh&#226;n giữ được nh&#226;n vi&#234;n v&#224; trả cho họ &#237;t nhất <b>1500 đ&#244;-la</b> mỗi hai tuần.  H&#227;y n&#243;i chuyện với chủ nh&#226;n của qu&#253; vị về lựa chọn n&#224;y.<br><br> Nếu qu&#253; vị <b>tự l&#224;m chủ</b> qu&#253; vị cũng c&#243; thể hội đủ điều kiện. <a href="https://www.ato.gov.au/general/JobKeeper-payment/">H&#227;y t&#236;m hiểu th&#234;m ở đ&#226;y</a>. Trong thời gian trước mắt, <b>qu&#253; vị vẫn c&#243; thể hội đủ điều kiện nhận trợ cấp của Centrelink</b>.</p>
+
+
+
+                <p>Qu&#253; vị <b>c&#243; đang nhận</b> trợ cấp JobSeeker (trước đ&#226;y l&#224; Newstart) hay trợ cấp Youth Allowance cho người t&#236;m việc kh&#244;ng?</p>
+
+                <p class="opts"><a>C&#243;</a> <a>Kh&#244;ng</a></p>
+
+            </div> 
+
+
+
+            <div class="results" data-id="s-n-y-y-y-y" data-end="yes">
+
+
+
+                <h3>Nghe c&#243; vẻ l&#224; qu&#253; vị c&#243; thể hội đủ điều kiện để được nhận trợ cấp cho người t&#236;m việc.</h3>
+
+
+
+                <p>H&#227;y đăng k&#253; &#253; định xin trợ cấp của qu&#253; vị</p>
+
+
+
+                <ol>
+
+                    <li><b>Youth Allowance</b> (d&#224;nh cho người t&#236;m việc) nếu qu&#253; vị từ 16 đến 21 tuổi</li> 
+
+                    <li><b>JobSeeker Payment</b> nếu qu&#253; vị từ 22 tuổi đến <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">tuổi cho Pension Age</a> (từ 66 trở l&#234;n)</li>  
+
+                    <li><b>Parenting Payment</b> nếu qu&#253; vị l&#224; người chăm s&#243;c ch&#237;nh cho một trẻ nhỏ</li> 
+
+                </ol>
+
+
+
+                <p><b>Lưu &#253;</b>: bất kỳ ai nhận được những trợ cấp n&#224;y sẽ được nhận <b>Coronavirus Supplement</b> tạm thời, l&#224; khoản tiền <b>bổ sung 550 đ&#244;-la mỗi hai tuần</b> cộng th&#234;m v&#224;o khoản trợ cấp hỗ trợ lợi tức của qu&#253; vị.</p>
+
+
+
+                <p>Đ&#226;y l&#224; trợ cấp tạm thời, dự kiến ​​sẽ ngừng v&#224;o ng&#224;y 24 th&#225;ng 9 năm 2020. Sau ng&#224;y n&#224;y, Coronavirus Supplement sẽ được trả với mức 250 đ&#244;-la mỗi hai tuần cho đến ng&#224;y 31 th&#225;ng 12 năm 2020. </p>
+
+
+
+                <p>H&#227;y v&#224;o <a href="https://my.gov.au/">myGov</a> để đăng nhập v&#224; bắt đầu. </p>
+
+
+
+                <div class="flag">
+
+
+
+                    <p>Nếu qu&#253; vị <b>bị mất việc</b> hoặc đ&#227; <b>tạm ngừng l&#224;m việc</b> v&#224;o hay sau ng&#224;y <b>1 th&#225;ng 3 năm 2020</b> th&#236; chủ nh&#226;n của qu&#253; vị c&#243; thể hội đủ điều kiện cho trợ cấp &quot;JobKeeper&quot;.  Đ&#226;y l&#224; trợ cấp của ch&#237;nh phủ để gi&#250;p chủ nh&#226;n giữ được nh&#226;n vi&#234;n v&#224; trả cho họ &#237;t nhất 1500 đ&#244;-la mỗi hai tuần.  H&#227;y n&#243;i chuyện với chủ nh&#226;n của qu&#253; vị về lựa chọn n&#224;y.<br><br> Nếu qu&#253; vị <b>tự l&#224;m chủ</b> qu&#253; vị cũng c&#243; thể hội đủ điều kiện. <a href="https://www.ato.gov.au/general/JobKeeper-payment/">H&#227;y t&#236;m hiểu th&#234;m ở đ&#226;y</a>. Trong thời gian trước mắt, <b>qu&#253; vị vẫn c&#243; thể hội đủ điều kiện nhận trợ cấp của Centrelink</b> v&#224; qu&#253; vị n&#234;n đăng k&#253; &#253; định xin trợ cấp của m&#236;nh.</p>
+
+
+
+                    <p>Qu&#253; vị <b> kh&#244;ng cần phải</b> cung cấp cho Centrelink bản sao k&#234; ng&#226;n h&#224;ng, giấy chứng nhận hay thư cho th&#244;i việc từ chủ nh&#226;n của qu&#253; vị.  Qu&#253; vị chỉ cần nộp trực tuyến &#253; định xin trợ cấp v&#224; Centrelink sẽ li&#234;n hệ với qu&#253; vị nếu họ cần th&#234;m th&#244;ng tin.</p> 
+
+
+
+                </div>
+
+
+
+            </div> 
+
+
+
+            <div class="results" data-id="s-n-y-y-y-n">
+
+
+
+                <p>Qu&#253; vị c&#243; thể hội đủ điều kiện để nhận <b>một loại trợ cấp Centrelink kh&#225;c</b>. H&#227;y v&#224;o <a href="https://www.centrelink.gov.au/custsite_pfe/pymtfinderest/paymentFinderEstimatorPage.jsf?wec-appid=pymtfinderest">trang mạng của Centrelink</a> để xem qu&#253; vị c&#243; thể hội đủ điều kiện nhận trợ cấp n&#224;o. <br><br> Qu&#253; vị cũng c&#243; thể xem c&#225;c tờ th&#244;ng tin <a href="http://ejaustralia.org.au/self-help/">tại đ&#226;y</a> hoặc gọi cho <a href="http://ejaustralia.org.au/legal-help-centrelink/">trung t&#226;m ph&#225;p l&#253; cộng đồng địa phương của qu&#253; vị</a> để được tư vấn th&#234;m. </p> 
+
+
+
+            </div>
+
+
+
+            <div class="results" data-id="s-n-y-n">
+
+      
+
+                <p>Qu&#253; vị sẽ cần phải <b>đăng nhập</b> v&#224;o <a href="https://my.gov.au">myGov</a> để kết nối t&#224;i khoản của qu&#253; vị.  Qu&#253; vị c&#243; thể l&#224;m theo bản hướng dẫn để kết nối t&#224;i khoản của m&#236;nh với Medicare <a href="https://www.servicesaustralia.gov.au/individuals/online-help/link-service-mygov-without-online-account">tại đ&#226;y</a> hay truy cập ATO <a href="https://www.ato.gov.au/General/Online-services/Individuals-and-sole-traders/#BK_2LinkyourmyGovaccounttotheATO">tại đ&#226;y</a>.<br><br> Khi qu&#253; vị đ&#227; l&#224;m xong việc n&#224;y, h&#227;y nhấp chuột v&#224;o &#39;C&#243;&#39; trong c&#226;u hỏi ở tr&#234;n để tiếp tục. </p>
+
+
+
+            </div>
+
+
+
+            <div class="results" data-id="s-n-n">
+
+
+
+                <p>H&#227;y v&#224;o <a href="https://my.gov.au">myGov</a> để đăng k&#253; một t&#224;i khoản.  Qu&#253; vị <b>sẽ cần một địa chỉ thư điện tử để đăng k&#253;</b>.</p>
+
+                
+
+                <p>Khi qu&#253; vị đ&#227; mở xong t&#224;i khoản, h&#227;y nhấp chuột v&#224;o &#39;C&#243;&#39; trong c&#226;u hỏi ở tr&#234;n để tiếp tục.</p>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="results" data-id="s-y-y-y" data-end="yes">
+
+
+
+                <h3>Cập nhật Centrelink về những thay đổi về ho&#224;n cảnh của qu&#253; vị.</h3>
+
+
+
+                <p>(v&#237; dụ: nếu lợi tức của qu&#253; vị hay của người phối ngẫu thay đổi hoặc qu&#253; vị bị giảm ca l&#224;m việc)</p>  
+
+
+
+                <p>Centrelink đang bị chậm trễ k&#233;o d&#224;i. <b>Xin vui l&#242;ng kh&#244;ng đến văn ph&#242;ng Centrelink tại địa phương của qu&#253; vị</b>, thay v&#224;o đ&#243;:</p>
+
+
+
+                <ol>
+
+                    <li><b>Trực tuyến</b>: qu&#253; vị c&#243; thể cập nhật những thay đổi về ho&#224;n cảnh của m&#236;nh th&#244;ng qua t&#224;i khoản <a href="https://my.gov.au/">myGov</a> của qu&#253; vị.</li>
+
+                    <li><b>Điện thoại</b>: nếu qu&#253; vị kh&#244;ng thể v&#224;o t&#224;i khoản <a href="https://my.gov.au/">myGov</a> của m&#236;nh th&#236; qu&#253; vị c&#243; thể gọi điện cho Centrelink nhưng h&#227;y chuẩn bị t&#236;nh thần l&#224; sẽ phải chờ đợi</li>
+
+                </ol>
+
+
+
+                <p>Qu&#253; vị sẽ <b>tự động</b> nhận được:</p>
+
+
+
+                <ol>
+
+                    <li>Trợ cấp <b>Coronavirus supplement</b>*</li>
+
+                </ol>
+
+
+
+                <p>Trợ cấp Coronavirus Supplement l&#224; khoản tiền hỗ trợ tạm thời. Những người nhận JobSeeker sẽ nhận được khoản tiền bổ sung cho đến ng&#224;y 24 th&#225;ng 9 năm 2020 khi trợ cấp n&#224;y dự kiến sẽ ngừng. Sau ng&#224;y n&#224;y, Coronavirus Supplement sẽ được trả với mức 250 đ&#244;-la mỗi hai tuần cho đến ng&#224;y 31 th&#225;ng 12 năm 2020. </p>
+
+
+
+                <p>* một khoản hỗ trợ bổ sung, <b>tạm thời 550 đ&#244;-la mỗi hai tuần</b> cho những người nhận một số loại trợ cấp nhất định. H&#227;y kiểm tra xem qu&#253; vị c&#243; hội đủ điều kiện <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#cor">ở đ&#226;y</a>.</p> 
+
+
+
+                <p>H&#227;y t&#236;m hiểu th&#234;m <a href="http://ejaustralia.org.au/self-help/">ở đ&#226;y</a>.</p>
+
+
+
+                <div class="flag">
+
+
+
+                    <p>Lưu &#253;: <b>Nghĩa vụ đ&#244;i b&#234;n bắt đầu lại</b> v&#224;o ng&#224;y 4 th&#225;ng 8 sau khi tạm dừng do COVID-19. Điều n&#224;y c&#243; nghĩa l&#224; trợ cấp JobSeeker của qu&#253; vị c&#243; thể bị hủy nếu qu&#253; vị từ chối nhận một c&#244;ng việc ph&#249; hợp m&#224; kh&#244;ng c&#243; l&#253; do hợp l&#253;.</p>
+
+
+
+                </div>
+
+
+
+
+
+            </div> 
+
+
+
+            <div class="results" data-id="s-y-y-n" data-end="yes">
+
+
+
+                <h3>Nghe c&#243; vẻ l&#224; qu&#253; vị c&#243; thể hội đủ điều kiện để được nhận trợ cấp cho người t&#236;m việc.</h3>
+
+
+
+                <h3>H&#227;y đăng k&#253; &#253; định xin trợ cấp của qu&#253; vị</h3>
+
+
+
+                <ol>
+
+                    <li><b>Youth Allowance</b> (d&#224;nh cho người t&#236;m việc) nếu qu&#253; vị từ 16 đến 21 tuổi</li> 
+
+                    <li><b>JobSeeker Payment</b> nếu qu&#253; vị từ 22 tuổi đến <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">tuổi cho Pension Age</a> (từ 66 trở l&#234;n)</li>  
+
+                    <li><b>Parenting Payment</b> nếu qu&#253; vị l&#224; người chăm s&#243;c ch&#237;nh cho một trẻ nhỏ</li> 
+
+                </ol>
+
+                
+
+                <p>Bất kỳ ai nhận được những trợ cấp n&#224;y sẽ được nhận <b>Coronavirus Supplement</b> tạm thời, l&#224; khoản tiền <b>bổ sung 550 đ&#244;-la mỗi hai tuần</b> cộng th&#234;m v&#224;o khoản trợ cấp hỗ trợ lợi tức của qu&#253; vị.</p>
+
+
+
+                <p>Trợ cấp Coronavirus Supplement l&#224; khoản tiền hỗ trợ tạm thời. Những người nhận JobSeeker sẽ nhận được khoản tiền bổ sung cho đến ng&#224;y 24 th&#225;ng 9 năm 2020 khi trợ cấp n&#224;y dự kiến sẽ ngừng. Sau ng&#224;y n&#224;y, Coronavirus Supplement sẽ được trả với mức 250 đ&#244;-la mỗi hai tuần cho đến ng&#224;y 31 th&#225;ng 12 năm 2020. </p>
+
+
+
+                <p>H&#227;y v&#224;o <a href="https://my.gov.au/">myGov</a> để đăng nhập v&#224; bắt đầu. </p>
+
+
+
+                <p>Qu&#253; vị <b> kh&#244;ng cần phải</b> cung cấp cho Centrelink bản sao k&#234; ng&#226;n h&#224;ng, giấy chứng nhận hay thư cho th&#244;i việc từ chủ nh&#226;n của qu&#253; vị.  Qu&#253; vị chỉ cần nộp trực tuyến &#253; định xin trợ cấp v&#224; Centrelink sẽ li&#234;n hệ với qu&#253; vị nếu họ cần th&#234;m th&#244;ng tin.</p> 
+
+
+
+                <div class="flag">
+
+
+
+                    <p>Lưu &#253;: <b>Nghĩa vụ đ&#244;i b&#234;n bắt đầu lại</b> v&#224;o ng&#224;y 4 th&#225;ng 8 sau khi tạm dừng do COVID-19. Điều n&#224;y c&#243; nghĩa l&#224; trợ cấp JobSeeker của qu&#253; vị c&#243; thể bị hủy nếu qu&#253; vị từ chối nhận một c&#244;ng việc ph&#249; hợp m&#224; kh&#244;ng c&#243; l&#253; do hợp l&#253;.</p>
+
+
+
+                </div>
+
+                
+
+            </div> 
+
+
+
+            <div class="results" data-id="s-y-n" data-end="yes">
+
+
+
+                <h3>Kh&#244;ng L&#224;m g&#236;</h3>
+
+
+
+                <p>Qu&#253; vị sẽ <b>tự động</b> nhận được:</p>
+
+
+
+                <ol>
+
+                    <li>Trợ cấp <b>Coronavirus supplement</b></li>
+
+                </ol>
+
+
+
+                <p>Trợ cấp Coronavirus Supplement l&#224; khoản tiền bổ sung, <b>tạm thời 550 đ&#244;-la mỗi hai tuần</b> cho những người nhận một số loại trợ cấp nhất định. H&#227;y kiểm tra xem qu&#253; vị c&#243; hội đủ điều kiện <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#cor">ở đ&#226;y</a>.</p> 
+
+
+
+                <p>Trợ cấp n&#224;y dự kiến ​​sẽ ngừng v&#224;o ng&#224;y 24 th&#225;ng 9 năm 2020. Sau ng&#224;y n&#224;y, Coronavirus Supplement sẽ được trả với mức 250 đ&#244;-la mỗi hai tuần cho đến ng&#224;y 31 th&#225;ng 12 năm 2020. </p>
+
+
+
+                <p>H&#227;y t&#236;m hiểu th&#234;m <a href="http://ejaustralia.org.au/self-help/">ở đ&#226;y</a>.</p>
+
+
+
+                <div class="flag">
+
+
+
+                    <p>Lưu &#253;: C&#225;c y&#234;u cầu về <b>nghĩa vụ đ&#244;i b&#234;n</b> đối với trợ cấp JobSeeker, Youth Allowance cho người t&#236;m việc hay Parenting Payment đ&#227; tạm thời được đ&#236;nh ho&#227;n do COVID-19. Những nghĩa vụ n&#224;y đ&#227; bắt đầu lại v&#224;o ng&#224;y 4 th&#225;ng 8 năm 2020. Điều n&#224;y c&#243; nghĩa l&#224; trợ cấp JobSeeker của qu&#253; vị c&#243; thể bị hủy nếu qu&#253; vị từ chối nhận một c&#244;ng việc ph&#249; hợp m&#224; kh&#244;ng c&#243; l&#253; do hợp l&#253;.</p> 
+
+
+
+                </div>
+
+
+
+            </div>  
+
+
+
+            <div id="finish">
+
+                
+
+                <a href="" class="download" download="centrelink-flowchart.png"><span>↓</span> Tải xuống biểu đồ</a>
+
+                <p class="reset">hoặc <a>bắt đầu lại?</a></p>
+
+            
+
+            </div>
+
+
+
+        </main>
+
+
+
+        <footer>
+
+            
+
+            <p>H&#227;y v&#224;o <a href="https://www.servicesaustralia.gov.au/individuals/centrelink">Centrelink</a> →<br>Th&#234;m<span> trợ gi&#250;p &amp; th&#244;ng tin c&#243; sẵn</span> tại  <a href="http://ejaustralia.org.au/self-help/">Economic Justice Australia</a> →<br> Th&#244;ng tin mới nhất về COVID-19 từ <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert">Bộ Y tế</a> →</p>
+
+            <p>Do <a href="https://twitter.com/SophieTrevitt">@SophieTrevitt</a> tạo ra</p>
+
+
+
+        </footer>
+
+
+
+    </div>
+
+
+
+<script>
+
+
+
+'use strict';
+
+
+
+var $body = document.querySelector('body'),
+
+    $start = document.querySelector('[data-id="s"]'),
+
+    $questions = document.querySelectorAll('.q'),
+
+    $download = document.querySelector('.download'),
+
+    isIE11 = false
+
+
+
+/* IE11 */
+
+if (window.NodeList && !NodeList.prototype.forEach){
+
+    NodeList.prototype.forEach = Array.prototype.forEach;
+
+    isIE11 = true;
+
+    $body.className = 'ie11'
+
+}
+
+
+
+if ('scrollRestoration' in history) {
+
+  history.scrollRestoration = 'manual'
+
+}
+
+
+
+document
+
+    .querySelectorAll('a[href]')
+
+    .forEach(function ($node,i){
+
+        $node.setAttribute('target', '_blank');
+
+});
+
+
+
+document
+
+    .querySelectorAll('.opts a')
+
+    .forEach(function ($node,i){
+
+
+
+    $node.addEventListener('click', function(e){
+
+
+
+        var $parent = $node.parentNode,
+
+            $q = $parent.parentNode,
+
+            currentQ = $q.getAttribute('data-id'),
+
+            answer = $node.textContent,
+
+            selected = (answer=='Không')? 'n': 'y'    
+
+
+
+            $q.className = 'q '+selected
+
+
+
+            var next = currentQ+'-'+selected,
+
+                $next = document.querySelector('[data-id="'+next+'"]')
+
+
+
+            // SHOW
+
+            $next.setAttribute('data-show','Có');
+
+            $body.setAttribute('data-state','begun');
+
+
+
+            if ($next.getAttribute('class') == 'results'){
+
+
+
+                $body.setAttribute('data-result','Có');
+
+                $download.setAttribute('href','charts-vi/'+next+'.png');
+
+
+
+            }
+
+            else {
+
+                $body.removeAttribute('data-result');
+
+            } 
+
+
+
+            //CLEAN UP NOT CURRENT!
+
+           cleanOtherOptions(next)
+
+           scroll.animateScroll(getOffsetTop($next) - 20)
+
+           
+
+    })
+
+})
+
+
+
+function cleanOtherOptions(next){
+
+
+
+    //check if part of current tree
+
+    document
+
+        .querySelectorAll('[data-show="Có"]')
+
+        .forEach(function ($node,i){
+
+            if (next.indexOf($node.getAttribute('data-id'))<0){
+
+                $node.removeAttribute('data-show');
+
+                $node.className = $node.className.replace(/\s(n|y)/gi,'')
+
+            }
+
+    })
+
+}
+
+
+
+document
+
+    .querySelector('.reset a')
+
+    .addEventListener('click', function(e){
+
+
+
+        document
+
+            .querySelectorAll('[data-show="Có"]')
+
+            .forEach(function ($node,i){
+
+                $node.removeAttribute('data-show');
+
+                $node.className = $node.className.replace(/\s(n|y)/gi,'')
+
+        })
+
+
+
+        $body.removeAttribute('data-result');
+
+        $body.removeAttribute('data-state');
+
+        $start.setAttribute('class','q');
+
+        scroll.animateScroll(0)
+
+        
+
+})
+
+
+
+
+
+/*! smooth-scroll v16.1.2 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
+
+window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(e){var t,n=(this.document||this.ownerDocument).querySelectorAll(e),o=this;do{for(t=n.length;0<=--t&&n.item(t)!==o;);}while(t<0&&(o=o.parentElement));return o}),(function(){if("function"==typeof window.CustomEvent)return;function e(e,t){t=t||{bubbles:!1,cancelable:!1,detail:void 0};var n=document.createEvent("CustomEvent");return n.initCustomEvent(e,t.bubbles,t.cancelable,t.detail),n}e.prototype=window.Event.prototype,window.CustomEvent=e})(),(function(){for(var r=0,e=["ms","moz","webkit","o"],t=0;t<e.length&&!window.requestAnimationFrame;++t)window.requestAnimationFrame=window[e[t]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[e[t]+"CancelAnimationFrame"]||window[e[t]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(e,t){var n=(new Date).getTime(),o=Math.max(0,16-(n-r)),a=window.setTimeout((function(){e(n+o)}),o);return r=n+o,a}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(e){clearTimeout(e)})})(),(function(e,t){"function"==typeof define&&define.amd?define([],(function(){return t(e)})):"object"==typeof exports?module.exports=t(e):e.SmoothScroll=t(e)})("undefined"!=typeof global?global:"undefined"!=typeof window?window:this,(function(q){"use strict";var I={ignore:"[data-scroll-ignore]",header:null,topOnEmptyHash:!0,speed:500,speedAsDuration:!1,durationMax:null,durationMin:null,clip:!0,offset:0,easing:"easeInOutCubic",customEasing:null,updateURL:!0,popstate:!0,emitEvents:!0},F=function(){var n={};return Array.prototype.forEach.call(arguments,(function(e){for(var t in e){if(!e.hasOwnProperty(t))return;n[t]=e[t]}})),n},r=function(e){"#"===e.charAt(0)&&(e=e.substr(1));for(var t,n=String(e),o=n.length,a=-1,r="",i=n.charCodeAt(0);++a<o;){if(0===(t=n.charCodeAt(a)))throw new InvalidCharacterError("Invalid character: the input contains U+0000.");1<=t&&t<=31||127==t||0===a&&48<=t&&t<=57||1===a&&48<=t&&t<=57&&45===i?r+="\\"+t.toString(16)+" ":r+=128<=t||45===t||95===t||48<=t&&t<=57||65<=t&&t<=90||97<=t&&t<=122?n.charAt(a):"\\"+n.charAt(a)}return"#"+r},L=function(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight)},x=function(e){return e?(t=e,parseInt(q.getComputedStyle(t).height,10)+e.offsetTop):0;var t},H=function(e,t,n,o){if(t.emitEvents&&"function"==typeof q.CustomEvent){var a=new CustomEvent(e,{bubbles:!0,detail:{anchor:n,toggle:o}});document.dispatchEvent(a)}};return function(o,e){var A,a,O,C,M={};M.cancelScroll=function(e){cancelAnimationFrame(C),C=null,e||H("scrollCancel",A)},M.animateScroll=function(i,c,e){M.cancelScroll();var s=F(A||I,e||{}),u="[object Number]"===Object.prototype.toString.call(i),t=u||!i.tagName?null:i;if(u||t){var l=q.pageYOffset;s.header&&!O&&(O=document.querySelector(s.header));var n,o,a,m,r,d,f,h,p=x(O),g=u?i:(function(e,t,n,o){var a=0;if(e.offsetParent)for(;a+=e.offsetTop,e=e.offsetParent;);return a=Math.max(a-t-n,0),o&&(a=Math.min(a,L()-q.innerHeight)),a})(t,p,parseInt("function"==typeof s.offset?s.offset(i,c):s.offset,10),s.clip),y=g-l,v=L(),w=0,S=(n=y,a=(o=s).speedAsDuration?o.speed:Math.abs(n/1e3*o.speed),o.durationMax&&a>o.durationMax?o.durationMax:o.durationMin&&a<o.durationMin?o.durationMin:parseInt(a,10)),E=function(e,t){var n,o,a,r=q.pageYOffset;if(e==t||r==t||(l<t&&q.innerHeight+r)>=v)return M.cancelScroll(!0),o=t,a=u,0===(n=i)&&document.body.focus(),a||(n.focus(),document.activeElement!==n&&(n.setAttribute("tabindex","-1"),n.focus(),n.style.outline="none"),q.scrollTo(0,o)),H("scrollStop",s,i,c),!(C=m=null)},b=function(e){var t,n,o;m||(m=e),w+=e-m,d=l+y*(n=r=1<(r=0===S?0:w/S)?1:r,"easeInQuad"===(t=s).easing&&(o=n*n),"easeOutQuad"===t.easing&&(o=n*(2-n)),"easeInOutQuad"===t.easing&&(o=n<.5?2*n*n:(4-2*n)*n-1),"easeInCubic"===t.easing&&(o=n*n*n),"easeOutCubic"===t.easing&&(o=--n*n*n+1),"easeInOutCubic"===t.easing&&(o=n<.5?4*n*n*n:(n-1)*(2*n-2)*(2*n-2)+1),"easeInQuart"===t.easing&&(o=n*n*n*n),"easeOutQuart"===t.easing&&(o=1- --n*n*n*n),"easeInOutQuart"===t.easing&&(o=n<.5?8*n*n*n*n:1-8*--n*n*n*n),"easeInQuint"===t.easing&&(o=n*n*n*n*n),"easeOutQuint"===t.easing&&(o=1+--n*n*n*n*n),"easeInOutQuint"===t.easing&&(o=n<.5?16*n*n*n*n*n:1+16*--n*n*n*n*n),t.customEasing&&(o=t.customEasing(n)),o||n),q.scrollTo(0,Math.floor(d)),E(d,g)||(C=q.requestAnimationFrame(b),m=e)};0===q.pageYOffset&&q.scrollTo(0,0),f=i,h=s,u||history.pushState&&h.updateURL&&history.pushState({smoothScroll:JSON.stringify(h),anchor:f.id},document.title,f===document.documentElement?"#top":"#"+f.id),"matchMedia"in q&&q.matchMedia("(prefers-reduced-motion)").matches?q.scrollTo(0,Math.floor(g)):(H("scrollStart",s,i,c),M.cancelScroll(!0),q.requestAnimationFrame(b))}};var t=function(e){if(!e.defaultPrevented&&!(0!==e.button||e.metaKey||e.ctrlKey||e.shiftKey)&&"closest"in e.target&&(a=e.target.closest(o))&&"a"===a.tagName.toLowerCase()&&!e.target.closest(A.ignore)&&a.hostname===q.location.hostname&&a.pathname===q.location.pathname&&/#/.test(a.href)){var t,n;try{t=r(decodeURIComponent(a.hash))}catch(e){t=r(a.hash)}if("#"===t){if(!A.topOnEmptyHash)return;n=document.documentElement}else n=document.querySelector(t);(n=n||"#top"!==t?n:document.documentElement)&&(e.preventDefault(),(function(e){if(history.replaceState&&e.updateURL&&!history.state){var t=q.location.hash;t=t||"",history.replaceState({smoothScroll:JSON.stringify(e),anchor:t||q.pageYOffset},document.title,t||q.location.href)}})(A),M.animateScroll(n,a))}},n=function(e){if(null!==history.state&&history.state.smoothScroll&&history.state.smoothScroll===JSON.stringify(A)){var t=history.state.anchor;"string"==typeof t&&t&&!(t=document.querySelector(r(history.state.anchor)))||M.animateScroll(t,null,{updateURL:!1})}};M.destroy=function(){A&&(document.removeEventListener("click",t,!1),q.removeEventListener("popstate",n,!1),M.cancelScroll(),C=O=a=A=null)};return (function(){if(!("querySelector"in document&&"addEventListener"in q&&"requestAnimationFrame"in q&&"closest"in q.Element.prototype))throw"Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.";M.destroy(),A=F(I,e||{}),O=A.header?document.querySelector(A.header):null,document.addEventListener("click",t,!1),A.updateURL&&A.popstate&&q.addEventListener("popstate",n,!1)})(),M}}));
+
+
+
+/* (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com */
+
+var getOffsetTop=function(f){var t=0;if(f.offsetParent)for(;f;)t+=f.offsetTop,f=f.offsetParent;return t>=0?t:0};
+
+
+
+var scroll = new SmoothScroll(null, {
+
+   speed: 1000,
+
+   easing: 'easeInOutQuad',
+
+   clip: true
+
+})
+
+
+
+</script>
+
+</body>
+
+</html>

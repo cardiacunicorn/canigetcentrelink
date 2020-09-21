@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="dik" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="icon" href="icon.png" sizes="192x192">
+	<title>Y&#246;ky&#246;k Centrelink kaam COVID-19 – Nyuuth puɔl yic ba ŋi&#235;c buɔɔth yic.</title>
+	<meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@SophieTrevitt">
+	<meta name="twitter:title" content="Yökyök Centrelink kaam COVID-19">
+	<meta name="twitter:description" content="Nyuuth puɔl yic ba ŋiëc buɔɔth yic rin ba ŋic lɔn tɛ̈u yïn kam kɔɔc kony, ku na ye keya, ka yï bë kuɔɔny yök kadä.">
+    <meta name="twitter:image:src" content="https://canigetcentrelink.com.au/share.png">
+	<meta property="og:type" content="website">
+    <meta property="og:url" content="https://canigetcentrelink.com.au">
+	<meta property="og:title" content="Yökyök Centrelink kaam COVID-19">
+	<meta property="og:description" content="Nyuuth puɔl yic ba ŋiëc buɔɔth yic rin ba ŋic lɔn tɛ̈u yïn kam kɔɔc kony, ku na ye keya, ka yï bë kuɔɔny yök kadä.">
+    <meta property="og:image" content="https://canigetcentrelink.com.au/share.png">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400;700&display=hide" rel="stylesheet">
+	<style>
+*, 
+*:before, 
+*:after {
+box-sizing:inherit}
+
+html {
+box-sizing:border-box;
+min-height:100%;
+-webkit-font-smoothing:antialiased;
+font-size:18px}
+
+body {
+padding:.5rem 1rem 1rem;
+margin:0;
+background:#fff;
+color:#0D0B0B;
+font-family: Arial, sans-serif;
+font-size:1rem;
+min-height:100%;
+font-weight:400;
+letter-spacing:-.025em}
+
+a {
+color:#0D0B0B;
+cursor:pointer;
+border:0}
+
+a[href]:hover {
+color:#0563FF;
+transition:.25s}
+
+b {
+font-weight:700}
+
+#page {
+margin:0 auto;
+max-width:380px}
+
+header {
+margin-bottom:2rem}
+
+.icon {
+display:flex;
+width:52px;
+margin:1rem auto .25rem;
+border:2px solid #0D0B0B;
+text-align:center;
+font-size:10px;
+opacity:1}
+
+.icon span {
+width:25px;
+height:25px;
+line-height:25px;
+background:#fff}
+
+.icon span:first-child {
+border-right:1px solid #0D0B0B}
+
+h1 {
+margin:0;
+font-weight:200;
+font-size:3rem;
+line-height:1.1;
+letter-spacing:-.05em;
+text-align:center}
+
+header p {
+border-top:1px solid #0D0B0B;
+margin:.75rem 0 0;
+padding:.5rem 0 .25rem;
+font-size:16px}
+
+.updated {
+border:0;
+margin:0;
+padding-top:0;
+font-size:12px;
+opacity:.5}
+
+.q {
+display:none;
+position:relative;
+padding-bottom:12rem;
+text-align:center;
+font-size:1.2rem}
+
+.start,
+[data-id="s"],
+[data-show="Ɣɛ̈ɛ̈"] {
+display:block}
+
+.start:before,
+.q:before {
+content:'';
+position:absolute;
+top:0;
+bottom:0;
+left:25%;
+border-left:2px solid #0D0B0B;
+z-index:0;
+opacity:0;
+transition:opacity .25s}
+
+.start:before,
+.y:before,
+.n:before {
+opacity:1}
+
+.n:before {
+left:75%}
+
+.start:before  {
+left:50%}
+
+.start {
+padding-bottom:3rem}
+
+.start div {
+position:relative;
+margin:auto;
+border:2px solid #0D0B0B;
+padding:4px 8px;
+background:#DBE7FA;
+font-size:.75rem;
+z-index:1;
+width:85px;
+white-space:nowrap}
+
+.q p {
+position:relative;
+margin:0;
+padding:1.5rem 2rem 1.75rem;
+background:#FFF3CD;
+border:2px solid #0D0B0B;
+z-index:1;
+line-height:1.15}
+
+.q p.msg {
+background:#EE9E4E;
+margin-bottom:4rem}
+
+.q .left {
+display:inline-block;
+text-align:left}
+
+.q .left span {
+display:block;
+padding-left:1rem;
+position:relative}
+
+.q .left span:before {
+content:'•';
+position:absolute;
+left:0;
+top:0}
+
+.q p.msg:after {
+content:'';
+position:absolute;
+margin-top:2px;
+top:100%;
+left:50%;
+height:5rem;
+border-left:2px solid #0D0B0B;
+z-index:0;
+transition:opacity .25s}
+
+.y p.msg:after,
+.n p.msg:after {
+opacity:0}
+
+.q .note {
+display:block;
+margin:.5rem -1rem -.5rem;
+font-size:.75rem;
+opacity:.66}
+
+.q .opts {
+display:flex;
+border-top:0;
+padding:0;
+background:#fff;
+font-size:1rem}
+
+.q .opts a {
+width:50%;
+padding:.75rem;
+display:block;
+-webkit-user-select:none;
+transition:background .25s}
+
+.y .opts a:first-child,
+.n .opts a:last-child {
+background:#22B85C;
+color:#fff;
+font-weight:700;
+letter-spacing:normal}
+
+.q .opts a:first-child {
+border-right:2px solid #0D0B0B}
+
+.q[data-id="s-n-y-y"] .opts a:first-child {
+border:0;
+width:100%}
+
+.y .opts a:first-child,
+.n .opts a:last-child {
+cursor:default;
+pointer-events:none}
+
+.n[data-id="s"]:after {
+content:'Jal wëëi apath ku päl yï guöp piny…';
+position:absolute;
+left:75%;
+border:2px solid #0D0B0B;
+padding:4px 8px;
+background:#DBE7FA;
+font-size:.75rem;
+white-space:nowrap;
+transform:translate(-50%, 120px)}
+
+.results {
+display:none;
+padding:1.25rem 1.5rem;
+border:2px solid #0D0B0B;
+background:#DBDBDB}
+
+[data-show="Ɣɛ̈ɛ̈"]{
+display:block}
+
+.results h3 {
+text-align:center;
+font-size:1.5rem;
+margin:0 1.5rem;
+line-height:1.1}
+
+.results > p:first-child {
+margin:0} 
+
+.results ol {
+padding:0;
+margin:1rem 0;
+list-style: none;
+counter-reset:c}
+
+.results li {
+padding:0 0 12px 40px;
+margin:0;
+counter-increment:c;
+position:relative}
+
+.results li:before {
+content:counter(c);
+position:absolute;
+top:-2px;
+left:0;
+line-height:30px;
+width:30px;
+height:30px;
+color:#fff;
+text-align:center;
+font-weight:700;
+border-radius:50%;
+background:#EE9E4E}
+
+.flag {
+border-top:2px solid #0D0B0B;
+background:#EE9E4E;
+margin:1.5rem -1.5rem -1.25rem;
+padding:1.25rem 1.5rem}
+
+.flag > p {
+margin-top:0}
+
+.flag > p:last-child {
+margin-bottom:0}
+
+#finish {
+display:none;
+margin-bottom:12rem;
+text-align:center}
+
+[data-result="Ɣɛ̈ɛ̈"] #finish  {
+display:block}
+
+a.download  {
+margin:.5rem 0;
+display:block;
+border:2px solid #0D0B0B;
+padding:.75rem;
+font-size:.75rem;
+text-decoration:none;
+text-transform:uppercase;
+transition:background .25s}
+
+.ie11 .download  {
+display:none}
+
+a.download:hover {
+color:#fff;
+background:#999}
+
+.reset {
+font-size:.75rem;
+opacity:.5}
+
+.reset a:hover {
+text-decoration:underline}
+
+footer {
+position:relative;
+margin-top:-4rem;
+font-size:.8rem}
+
+[data-state="begun"] footer {
+margin-top:4rem}
+
+footer p {
+margin-bottom:0}
+
+@media all and (min-width:620px){ 
+
+    body {
+    padding-top:1.5rem}
+    
+    header {
+    text-align:center;
+    margin-bottom:3rem}
+
+}
+
+@media all and (max-width:395px){
+
+    h1 {
+    font-size:2.5rem}
+
+    .q {
+    font-size:1rem}
+
+    .q p,
+    .results {
+    padding:1.25rem 1rem 1.5rem}
+
+    .flag {
+    margin:1.25rem -1rem -1.5rem}
+
+    .results h3 {
+    margin:0}
+
+    footer {
+    font-size:.7rem}
+
+    footer span {
+    display:none}
+
+}
+
+.languages {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.languages a {
+        padding: 0.7em;
+    }
+
+    .languages a:hover {
+        color: #22B85C;
+        text-decoration: none;
+    }
+
+    .languages .activeLink {
+        text-decoration: none;
+        color: #22B85C;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div class="languages">
+
+<a href="index.html">English</a> <a href="index(es).html">Español</a> <a href="index(dik).html" class="activeLink">Thuɔŋjäŋ</a> <a href="index(zh-Hans).html">简体中文</a> <a href="index(vi).html">Tiếng Việt</a> <a href="index(ar).html">العربية</a>
+
+</div>
+
+    <div id="page">
+
+        <header>
+
+            <div class="icon"><span>Ɣɛ̈ɛ̈</span> <span>Ɣei</span></div>
+
+            <h1>Y&#246;ky&#246;k Centrelink kaam COVID-19</h1>
+
+            <p>Nyuuth puɔl yic ba ŋi&#235;c buɔɔth yic rin ba ŋic <b>lɔn tɛ̈u y&#239;n kam kɔɔc kony</b>, ku na ye keya, <b>ka y&#239; b&#235; kuɔɔny y&#246;k kad&#228;</b>.</p>
+
+            <p class="updated">Dhuk yic Ak&#246;ldi&#228;k, ye n&#239;n 18 Penbɛ̈t, 2020</p>
+
+        </header>
+
+        <main>
+
+            <div class="q start">
+                <div>Gɔc tɛ̈n...</div>
+            </div>
+
+            <div class="q" data-id="s"> 
+                <p>Ye <b>dɔm w&#235;&#235;u</b> Centrelink w&#235;nthɛɛr?</p>
+                <p class="opts"><a>Ɣɛ̈ɛ̈</a> <a>Ɣei</a></p>
+            </div>  
+
+            <div class="q" data-id="s-n">
+                <p>Ca gany ɣ&#246;n myGov lɔ̈kaɣukar?</p>
+                <p class="opts"><a>Ɣɛ̈ɛ̈</a> <a>Ɣei</a></p>
+            </div> 
+
+            <div class="q" data-id="s-n-y">
+                <p>Ca ɣ&#246;n duun aku&#235;n &#235; myGov nuɛ̈ɛ̈t* ke Medicare w&#228;l&#228; M&#228;ktam Aju&#235;r Ɣothralia (ATO)? <span class="note">* Lɔɔr ɣ&#246;n duun <a href="https://my.gov.au/">myGov </a>ba t&#239;ŋ ku tuany &quot;Loilooi&quot; tɔ̈u lɔ̈kaɣukar rin ba ŋic ye loilooi nɛn c&#235; nuɛ̈ɛ̈t.</span></p>
+                <p class="opts"><a>Ɣɛ̈ɛ̈</a> <a>Ɣei</a></p>
+            </div> 
+
+            <div class="q" data-id="s-n-y-y">
+                <p>Apath, ɣ&#246;n duun lɔ̈kaɣukar a c&#235; th&#246;k gui&#235;r. Na ca kaŋ dɔm w&#235;&#235;u Centrelink, ka y&#239;n a b&#235; r&#235;&#235;r ka y&#239; leŋ Aku&#235;n &#235; Ŋi&#235;&#235;c alɔŋ Centrelink (CRN). Aku&#235;n duun CRN a ba y&#246;k ath&#246;r nh&#239;&#239;m ku kɛd ye Centrelink tu&#246;c y&#239;&#239;n. Yeen aku&#235;n bɛ̈ɛ̈r yic 9 ku ee thok th&#246;k k&#239;n d&#239;t. Ŋic k&#235;n muk rin b&#239;n ye bɛn dhu&#246;k l&#228;thɛɛr. B&#235;yak&#235;d&#228;ŋ, y&#239;n <b>a ce bɛn cɔɔl CRN</b> tɛ̈ w&#239;c y&#239;n yeen ba rot g&#228;t piny rin b&#235; y&#239;&#239;n ya dɔ̈m - Centrelink a b&#239; yu&#246;p l&#228;thɛɛr rin ba k&#235;n g&#228;t piny tɛ̈ liiu yen ke y&#239;&#239;n. </p>
+                <p class="opts"><a>Dɛ̈d</a></p>
+            </div>
+
+            <div class="q" data-id="s-n-y-y-y">
+                <p>  Rin COVID-19 w&#228;l&#228; rin c&#239; ɣɔɔc dhuk piny <b>tɛkd&#228; ka t&#246;k kam k&#228;k&#228;</b>a c&#235; dhiɛl r&#235;&#235;t y&#239; nhom:<br><br> <span class="left"><span>Nyu&#246;&#246;c luɔy yic</span><span>Luɔn du a c&#235; ri&#228;&#228;k</span> <span>Luɔn du a c&#235; tek yic</span><span>Luɔn du a c&#235; ri&#228;&#228;k w&#228;l&#228; a ca tek yic rin ba mat      ke mu&#246;&#246;k &#235; m&#239;th</span><span>Luɔn du a c&#235; ri&#228;&#228;k rin c&#239; y&#239;n y&#239; thok lel</span></span> </p>
+                <p class="opts"><a>Ɣɛ̈ɛ̈</a> <a>Ɣei</a></p>
+            </div> 
+
+            <div class="q" data-id="s-y">
+                <p>Leŋ k&#235; <b>c&#235; rot waar cɛɛŋ du yic</b> rin COVID-19 w&#228;l&#228; rin c&#239; ɣɔɔc dhuk piny? (c&#235;m&#235;n, c&#235; y&#239; nyu&#246;&#246;c, c&#235; luɔn du ri&#228;&#228;k w&#228;l&#228; c&#235; luɔn du tek yic?)</p>
+                <p class="opts"><a>Ɣɛ̈ɛ̈</a> <a>Ɣei</a></p>
+            </div> 
+
+            <div class="q" data-id="s-y-y">
+
+                <p class="msg"><b>Det</b>: Na c&#235; <b>luɔn du ri&#228;&#228;k</b> w&#228;l&#228; <b>n&#228; y&#239; nyu&#246;&#246;c tɛ̈n luɔy</b> gɔl ak&#246;l n&#239;n <b>1 Pendi&#228;k 2020</b>, ka raan ka c&#239; lu&#246;&#246;i a b&#235; kony w&#235;&#235;u ye dɔ̈m dh&#235;l &quot;JobKeeper&quot;. K&#228;k&#228; aa w&#235;&#235;u ye akuma kɔɔc dhie kɔc lu&#246;&#246;i kony rin b&#239;k kɔɔc keen c&#239;k lu&#246;&#246;i c&#239; cop wei ku aa b&#239;k ya dɔ̈m w&#235;&#235;u c&#235; <b>$1500</b> wan thok wiik ka rou yiic. Jaam ke raan c&#239; lu&#246;&#246;i alɔŋ w&#235;&#235;u &#235; kuɔɔny k&#228;.<br><br> Na<b> ca rot lu&#246;&#246;i y&#239;n rot</b>, ka l&#235;u b&#235; y&#239; kony aya. <a href="https://www.ato.gov.au/general/JobKeeper-payment/">W&#239;c l&#235;k kɔ̈k tɛ̈n</a>. Ka y&#239; t&#239;t,<b> tɛkd&#228; ka l&#235;u b&#235; y&#239; lɔ̈k y&#239; ye dɔ̈m w&#235;&#235;u &#235; kuɔɔny &#235; Centrelink tɛ pɛth yen keya</b>.</p>
+
+                <p>Ye <b>dɔm w&#235;&#235;u</b> RaanW&#239;cLuɔy (JobSeeker) w&#235;nthɛɛr? (w&#228;&#228;r ye cɔl Newstart) w&#228;l&#228; Youth Allowance tɛ̈n RaanW&#239;cLuɔy (JobSeeker)?</p>
+                <p class="opts"><a>Ɣɛ̈ɛ̈</a> <a>Ɣei</a></p>
+            </div> 
+
+            <div class="results" data-id="s-n-y-y-y-y" data-end="yes">
+
+                <h3>Y&#239;n a c&#239;t raan tɔ̈u kam kɔɔc path ke w&#235;&#235;u &#235; kuɔɔny &#235; RaanW&#239;cLuɔy (JobSeeker) rin w&#239;c y&#239;n luɔy.</h3>
+
+                <p>G&#228;t rot piny rin b&#235; y&#239; dɔ̈m w&#235;&#235;u &#235; kuɔɔny.</p>
+
+                <ol>
+                    <li><b>Youth Allowance</b> (tɛ̈n kɔɔc w&#239;c luɔy) tɛ̈ ye y&#239;n ri&#235;nythii leŋ run ka 16 – 21.</li> 
+                    <li><b>W&#235;&#235;u &#235; RaanW&#239;cLuɔy (JobSeeker)</b> tɛ̈ leŋ y&#239;n ru&#246;&#246;n 22 ɣet run juɛ̈ɛ̈c <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">kɔɔc dɔm w&#235;&#235;u &#235; m&#228;&#228;c</a> (ru&#246;&#246;n 66 le tueŋ).</li>  
+                    <li><b>W&#235;&#235;u &#235; mu&#246;&#246;k &#235; m&#239;th</b> tɛ̈ ye y&#239;n raan muk manh koor ku ye y&#239;n ye muk kaam d&#239;t tet.</li> 
+                </ol>
+
+                <p><b>Det</b>: kuat raan ye dɔ̈m w&#235;&#235;u k&#228; a b&#235; <b>W&#235;&#235;u Kuɔɔny Kɔ̈mkorona (Coronavirus Supplement)</b> kaam cek yic ku w&#235;&#235;u ye juak th&#239;n aa <b>$550 wiik ka rou yiic</b> ye w&#235;&#235;u w&#235;nthɛɛr kony raan juak yiic.</p>
+
+                <p>K&#235;n ee kuɔɔny &#235; n&#239;n lik ku yeen a c&#235; guiir b&#235; kɔ̈ɔ̈c ak&#246;l n&#239;n 24 Pendhoŋuan 2020. Na c&#235; k&#246;&#246;l k&#235;n wan, ka W&#235;&#235;u Kuɔɔny Kɔ̈mkorona b&#235; ya gam aa b&#235; ya $250 wiik ka rou yiic ɣet ak&#246;l n&#239;n 31 Penthi&#228;&#228;rkurou 2020. </p>
+
+                <p>Lɔɔr lɔ̈kaɣukar <a href="https://my.gov.au/">myGov</a> ku g&#228;t rot piny ku gɔc</p>
+
+                <div class="flag">
+
+                    <p>Na c&#235; <b>luɔn du ri&#228;&#228;k </b>w&#228;l&#228;<b> n&#228; y&#239; nyu&#246;&#246;c tɛ̈n luɔy</b> gɔl ak&#246;l n&#239;n <b>1 Pendi&#228;k 2020</b>, ka raan ka c&#239; lu&#246;&#246;i a b&#235; kony w&#235;&#235;u ye dɔ̈m dh&#235;l &quot;JobKeeper&quot;. K&#228;k&#228; aa w&#235;&#235;u ye akuma kɔɔc dhie kɔc lu&#246;&#246;i kony rin b&#239;k kɔɔc keen c&#239;k lu&#246;&#246;i c&#239; cop wei ku aa b&#239;k ya dɔ̈m w&#235;&#235;u c&#235; $1500 wan thok wiik ka rou yiic. Jaam ke raan c&#239; lu&#246;&#246;i alɔŋ w&#235;&#235;u &#235; kuɔɔny k&#228;.<br><br> Na<b> ca rot lu&#246;&#246;i y&#239;n rot</b>, ka l&#235;u b&#235; y&#239; kony aya. <a href="https://www.ato.gov.au/general/JobKeeper-payment/">W&#239;c l&#235;k kɔ̈k tɛ̈n</a>. Ka y&#239; t&#239;t, <b>tɛkd&#228; ka l&#235;u b&#235; y&#239; lɔ̈k y&#239; ye dɔ̈m w&#235;&#235;u &#235; kuɔɔny &#235; Centrelink tɛ pɛth yen keya</b> ku a path ba rot g&#228;t piny rin b&#235; y&#239; dɔ̈m w&#235;&#235;u &#235; kuɔɔny.</p>
+
+                    <p>Y&#239;n <b>a k&#235;c lɛ̈k ba</b> aku&#235;n &#235; bɛŋ du g&#228;m Centrelink, ku y&#239;n a k&#235;c cɔl anyuth c&#239; luɔy ri&#228;&#228;k w&#228;l&#228; ath&#246;r c&#239; raan ka c&#239; lu&#246;&#246;i gɔ̈t. Cuat ath&#246;r duun w&#239;c y&#239;n w&#235;&#235;u kuɔɔny lɔ̈kaɣukar ku Centrelink a b&#235; jam ke y&#239;&#239;n tɛ̈ leŋ yen w&#235;l kɔ̈k c&#235; d&#246;ŋ w&#239;ck&#228; ba ke mat th&#239;n.</p> 
+
+                </div>
+
+            </div> 
+
+            <div class="results" data-id="s-n-y-y-y-n">
+
+                <p>Tɛkd&#228; ba ya raan tɔ̈u kam kɔɔc leŋ <b>path b&#235; ke dɔ̈m w&#235;&#235;u kɔ̈k &#235; Centrelink</b>. Lɔɔr <a href="https://www.centrelink.gov.au/custsite_pfe/pymtfinderest/paymentFinderEstimatorPage.jsf?wec-appid=pymtfinderest">Lɔ̈kaɣukar &#235; Centrelink</a> rin ba t&#239;ŋ lɔn leŋ yen kuɔɔny dɛ̈d tɔ̈u b&#235; piath ke y&#239;&#239;n.<br><br> Aya, a l&#235;u ba w&#235;l kɔ̈k puɔc piŋ y&#246;k <a href="http://ejaustralia.org.au/self-help/">tɛ̈n </a>w&#228;l&#228; yu&#246;p kɔɔc lui <a href="http://ejaustralia.org.au/legal-help-centrelink/">Panl&#246;&#246;ŋ Wu&#246;n Dun Akeunhom</a> b&#239;k y&#239; lɛ̈k w&#235;l kɔ̈k.</p> 
+
+            </div>
+
+            <div class="results" data-id="s-n-y-n">
+      
+                <p>Y&#239;n a c&#235; lɛ̈k ba <b>rot g&#228;t piny</b> lɔ̈kaɣukar <a href="https://my.gov.au">myGov </a>rin ba akuɛ̈ɛ̈n ku nuɛ̈ɛ̈t. A l&#235;u ba w&#235;l pi&#246;&#246;c alɔŋ tɛ̈ b&#239;n akuɛ̈n dunuɛ̈ɛ̈t Medicare th&#239;n piŋ <a href="https://www.servicesaustralia.gov.au/individuals/online-help/link-service-mygov-without-online-account">tɛ̈n </a>tɛ̈d&#228; ka y&#239;n nem ATO <a href="https://www.ato.gov.au/General/Online-services/Individuals-and-sole-traders/#BK_2LinkyourmyGovaccounttotheATO">tɛ̈n</a>.<br><br> Na ca k&#235;n th&#246;l luɔy, ka y&#239; tuany &#39;Ɣɛ̈ɛ̈&#39; l&#246;ŋ w&#235;n c&#235; thi&#235;&#235;c yic nhial rin ba la tueŋ ke luɔn du.</p>
+
+            </div>
+
+            <div class="results" data-id="s-n-n">
+
+                <p>Lɔɔr lɔ̈kaɣukar <a href="https://my.gov.au">myGov </a>ba akuɛ̈n du yam. Y&#239;n <b>a b&#235; dhiɛl laŋ imeel rin b&#239;n rot g&#228;t piny</b>.</p>
+                
+                <p>Na ca akuɛ̈n du yam, ka y&#239; tuany &#39;Ɣɛ̈ɛ̈&#39; l&#246;ŋ w&#235;n c&#235; thi&#235;&#235;c yic nhial rin ba la tueŋ ke luɔn du.</p>
+
+            </div>
+
+
+
+            <div class="results" data-id="s-y-y-y" data-end="yes">
+
+                <h3>Lɛ̈k kɔɔc lui Centrelink tɛ̈ leŋ yen k&#235; c&#235; rot waar pi&#235;r du yic.</h3>
+
+                <p>(c&#235;m&#235;n, tɛ̈ c&#239; w&#235;&#235;u kuun ye dɔm w&#228;l&#228; tɛ̈ c&#239; w&#235;&#235;u raan ceŋ wek baai ke yiic waar w&#228;l&#228; tɛ̈ c&#239; luɔn du tek yic)</p>  
+
+                <p>Kɔɔc t&#239;t b&#239;k jam ke Centrelink aa ju&#235;c apɛy. Manha <b>duk la m&#228;ktam &#235; Centrelink duun akeunhom yic</b>, k&#228; l&#235;u ba ke looi aa k&#239;k:</p>
+
+                <ol>
+                    <li><b>Lɔ̈kaɣukar</b>: na leŋ k&#235; c&#235; rot waar pi&#235;r du yic ka l&#235;u ba cɔ̈k piny lɔ̈kaɣukar aku&#235;n duun <a href="https://my.gov.au/">myGov </a>yic</li>
+                    <li><b>Telepun</b>: na ci&#235;n tɛ̈ b&#239;n la aku&#235;n duun <a href="https://my.gov.au/">myGov </a>yic, ka y&#239; yup Centrelink b&#235;yak&#235;d&#228;ŋ yen b&#239;n t&#239;&#239;t</li>
+                </ol>
+
+                <p>Y&#239;n a b&#235; <b>gua g&#228;m</b> k&#228;k&#228;:</p>
+
+                <ol>
+                    <li>W&#235;&#235;u <b>Kuɔɔny Kɔ̈mkorona</b>*</li>
+                </ol>
+
+                <p>W&#235;&#235;u Kuɔɔny Kɔ̈mkorona (Coronavirus Supplement) aa ye dɔm kaam cek yic. W&#235;&#235;u &#235; kuɔɔny tɛ̈n RaanW&#239;cLuɔy (JobSeeker) k&#228; aa c&#235; guiir b&#235; raan ke dɔm ɣet tɛ̈ b&#239; ke teem ak&#246;l n&#239;n 24 Pendhoŋuan 2020. Na c&#235; k&#246;&#246;l k&#235;n wan, ka W&#235;&#235;u Kuɔɔny Kɔ̈mkorona b&#235; ya gam aa b&#235; ya $250 wiik ka rou yiic ɣet ak&#246;l n&#239;n 31 Penthi&#228;&#228;rkurou 2020. </p>
+
+                <p>*w&#235;&#235;u aju&#235;k, <b>w&#235;&#235;u kuɔɔny kaam cek yic ku w&#235;&#235;u b&#235; juak th&#239;n aa $550 wiik ka rou yiic</b> ye w&#235;&#235;u w&#235;nthɛɛr kony raan juak yiic. Det wɛ̈t <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#cor">tɛ̈n </a>ba ŋic lɔn tɛ̈u y&#239;n kam kɔɔc kony.</p> 
+
+                <p>W&#239;c l&#235;k kɔ̈k <a href="http://ejaustralia.org.au/self-help/">tɛ̈n</a>.</p>
+
+                <div class="flag">
+
+                    <p>Det: <b>W&#235;l c&#235; mat b&#235; luɔy rɔm</b> mac aa b&#235; bɛn dhuk nyiɛn den ak&#246;l 4 Penbɛ̈t tɛ̈ w&#228;&#228;r c&#239; ke kaŋ teem kɔ̈ɔ̈th rin COVID-19. Ka yeen w&#235;&#235;u kuun kuɔɔny &#235; RaanW&#239;cLuɔy (JobSeeker) aa l&#235;u b&#235; ke teem kɔ̈ɔ̈th tɛ̈ jɛy y&#239;n lon path ke y&#239;&#239;n ka c&#239;n wɛ̈t pɛɛth jɛy y&#239;n ca gai yic.</p>
+
+                </div>
+
+
+            </div> 
+
+            <div class="results" data-id="s-y-y-n" data-end="yes">
+
+                <h3>Y&#239;n a c&#239;t raan tɔ̈u kam kɔɔc path ke w&#235;&#235;u &#235; kuɔɔny &#235; RaanW&#239;cLuɔy (JobSeeker) rin w&#239;c y&#239;n luɔy.</h3>
+
+                <h3>G&#228;t rot piny rin b&#235; y&#239; dɔ̈m w&#235;&#235;u &#235; kuɔɔny.</h3>
+
+                <ol>
+                    <li><b>Youth Allowance</b> (tɛ̈n kɔɔc w&#239;c luɔy) tɛ̈ ye y&#239;n ri&#235;nythii leŋ run ka 16 – 21.</li> 
+                    <li><b>W&#235;&#235;u &#235; RaanW&#239;cLuɔy (JobSeeker)</b> tɛ̈ leŋ y&#239;n ru&#246;&#246;n 22 ɣet run juɛ̈ɛ̈c <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/age-pension/who-can-get-it">kɔɔc dɔm w&#235;&#235;u &#235; m&#228;&#228;c</a> (ru&#246;&#246;n 66 le tueŋ).</li>  
+                    <li><b>W&#235;&#235;u &#235; mu&#246;&#246;k &#235; m&#239;th</b> tɛ̈ ye y&#239;n raan muk manh koor ku ye y&#239;n ye muk kaam d&#239;t tet.</li> 
+                </ol>
+                
+                <p>Kuat raan ye dɔ̈m w&#235;&#235;u k&#228; a b&#235; <b>W&#235;&#235;u Kuɔɔny Kɔ̈mkorona (Coronavirus Supplement)</b> kaam cek yic ku w&#235;&#235;u ye juak th&#239;n aa <b>$550 wiik ka rou yiic</b> ye w&#235;&#235;u w&#235;nthɛɛr kony raan juak yiic.</p>
+
+                <p>W&#235;&#235;u Kuɔɔny Kɔ̈mkorona (Coronavirus Supplement) aa ye dɔm kaam cek yic. W&#235;&#235;u &#235; kuɔɔny tɛ̈n RaanW&#239;cLuɔy (JobSeeker) k&#228; aa c&#235; guiir b&#235; raan ke dɔm ɣet tɛ̈ b&#239; ke teem ak&#246;l n&#239;n 24 Pendhoŋuan 2020. Na c&#235; k&#246;&#246;l k&#235;n wan, ka W&#235;&#235;u Kuɔɔny Kɔ̈mkorona b&#235; ya gam aa b&#235; ya $250 wiik ka rou yiic ɣet ak&#246;l n&#239;n 31 Penthi&#228;&#228;rkurou 2020. </p>
+
+                <p>Lɔɔr lɔ̈kaɣukar <a href="https://my.gov.au/">myGov</a> ku g&#228;t rot piny ku gɔc.</p>
+
+                <p>Y&#239;n <b>a k&#235;c lɛ̈k ba</b> aku&#235;n &#235; bɛŋ du g&#228;m Centrelink, ku y&#239;n a k&#235;c cɔl anyuth c&#239; luɔy ri&#228;&#228;k w&#228;l&#228; ath&#246;r c&#239; raan ka c&#239; lu&#246;&#246;i gɔ̈t. Cuat ath&#246;r duun w&#239;c y&#239;n w&#235;&#235;u kuɔɔny lɔ̈kaɣukar ku Centrelink a b&#235; jam ke y&#239;&#239;n tɛ̈ leŋ yen w&#235;l kɔ̈k c&#235; d&#246;ŋ w&#239;ck&#228; ba ke mat th&#239;n.</p> 
+
+                <div class="flag">
+
+                    <p>Det: <b>W&#235;l c&#235; mat b&#235; luɔy rɔm</b> mac aa b&#235; bɛn dhuk nyiɛn den ak&#246;l 4 Penbɛ̈t tɛ̈ w&#228;&#228;r c&#239; ke kaŋ teem kɔ̈ɔ̈th rin COVID-19. Ka yeen w&#235;&#235;u kuun kuɔɔny &#235; RaanW&#239;cLuɔy (JobSeeker) aa l&#235;u b&#235; ke teem kɔ̈ɔ̈th tɛ̈ jɛy y&#239;n lon path ke y&#239;&#239;n ka c&#239;n wɛ̈t pɛɛth jɛy y&#239;n ca gai yic.</p>
+
+                </div>
+                
+            </div> 
+
+            <div class="results" data-id="s-y-n" data-end="yes">
+
+                <h3>A c&#239;n k&#235; ba looi.</h3>
+
+                <p>Y&#239;n a b&#235; <b>gua g&#228;m</b> k&#228;k&#228;:</p>
+
+                <ol>
+                    <li>W&#235;&#235;u <b>Kuɔɔny Kɔ̈mkorona</b></li>
+                </ol>
+
+                <p>W&#235;&#235;u Kuɔɔny Kɔ̈mkorona (Coronavirus Supplement) juɛk raan, <b>w&#235;&#235;u kuɔɔny kaam cek yic ku w&#235;&#235;u b&#235; juak th&#239;n aa $550 wiik ka rou yiic</b> ye w&#235;&#235;u w&#235;nthɛɛr kony raan juak yiic. Det wɛ̈t <a href="https://www.dss.gov.au/about-the-department/coronavirus-covid-19-information-and-support#cor">tɛ̈n </a>ba ŋic lɔn tɛ̈u y&#239;n kam kɔɔc kony.</p> 
+
+                <p>A c&#235; guiir b&#235; kɔ̈ɔ̈c ak&#246;l n&#239;n 24 Pendhoŋuan 2020. Na c&#235; k&#246;&#246;l k&#235;n wan, ka W&#235;&#235;u Kuɔɔny Kɔ̈mkorona b&#235; ya gam aa b&#235; ya $250 wiik ka rou yiic ɣet ak&#246;l n&#239;n 31 Penthi&#228;&#228;rkurou 2020. </p>
+
+                <p>W&#239;c l&#235;k kɔ̈k <a href="http://ejaustralia.org.au/self-help/">tɛ̈n</a>.</p>
+
+                <div class="flag">
+
+                    <p>Det: <b>W&#235;l c&#235; mat b&#235; luɔy rɔm</b> mac w&#235;&#235;u &#235; RaanW&#239;cLuɔy (JobSeeker), Youth Allowance tɛ̈n raan w&#239;c luɔy w&#228;l&#228; raan d&#246;m w&#235;&#235;u &#235; mu&#246;&#246;k &#235; m&#239;th aa c&#235; teem kɔ̈ɔ̈th n&#239;n lik rin COVID-19. Aa b&#235; bɛn dhuk nyiɛn den ak&#246;l 4 Penbɛ̈t 2020. Ka yeen w&#235;&#235;u kuun kuɔɔny &#235; RaanW&#239;cLuɔy (JobSeeker) aa l&#235;u b&#235; ke teem kɔ̈ɔ̈th tɛ̈ jɛy y&#239;n lon path ke y&#239;&#239;n ka c&#239;n wɛ̈t pɛɛth jɛy y&#239;n ca gai yic.</p> 
+
+                </div>
+
+            </div>  
+
+            <div id="finish">
+                
+                <a href="" class="download" download="centrelink-flowchart.png"><span>↓</span> K&#239;n nyooth wɛ̈lwɛ̈l</a>
+                <p class="reset">w&#228;l&#228; <a>bɛn gɔɔc?</a></p>
+            
+            </div>
+
+        </main>
+
+        <footer>
+            
+            <p>Lɔɔr <a href="https://www.servicesaustralia.gov.au/individuals/centrelink">Centrelink </a>→<br> <span>tuany kuɔɔny ku l&#235;k tɔ̈u</span> <a href="http://ejaustralia.org.au/self-help/">Ecomomic Justice Australia</a> →<br> w&#235;l COVID-19 puɔc piŋ tɛ̈n <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert">Amatnhom &#235; Pialgu&#246;p</a> →</p>
+            <p>Gɛ̈t <a href="https://twitter.com/SophieTrevitt">@SophieTrevitt</a></p>
+
+        </footer>
+
+    </div>
+
+<script>
+
+'use strict';
+
+var $body = document.querySelector('body'),
+    $start = document.querySelector('[data-id="s"]'),
+    $questions = document.querySelectorAll('.q'),
+    $download = document.querySelector('.download'),
+    isIE11 = false
+
+/* IE11 */
+if (window.NodeList && !NodeList.prototype.forEach){
+    NodeList.prototype.forEach = Array.prototype.forEach;
+    isIE11 = true;
+    $body.className = 'ie11'
+}
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual'
+}
+
+document
+    .querySelectorAll('a[href]')
+    .forEach(function ($node,i){
+        $node.setAttribute('target', '_blank');
+});
+
+document
+    .querySelectorAll('.opts a')
+    .forEach(function ($node,i){
+
+    $node.addEventListener('click', function(e){
+
+        var $parent = $node.parentNode,
+            $q = $parent.parentNode,
+            currentQ = $q.getAttribute('data-id'),
+            answer = $node.textContent,
+            selected = (answer=='Ɣei')? 'n': 'y'    
+
+            $q.className = 'q '+selected
+
+            var next = currentQ+'-'+selected,
+                $next = document.querySelector('[data-id="'+next+'"]')
+
+            // SHOW
+            $next.setAttribute('data-show','Ɣɛ̈ɛ̈');
+            $body.setAttribute('data-state','begun');
+
+            if ($next.getAttribute('class') == 'results'){
+
+                $body.setAttribute('data-result','Ɣɛ̈ɛ̈');
+                $download.setAttribute('href','charts-dik/'+next+'.png');
+
+            }
+            else {
+                $body.removeAttribute('data-result');
+            } 
+
+            //CLEAN UP NOT CURRENT!
+           cleanOtherOptions(next)
+           scroll.animateScroll(getOffsetTop($next) - 20)
+           
+    })
+})
+
+function cleanOtherOptions(next){
+
+    //check if part of current tree
+    document
+        .querySelectorAll('[data-show="Ɣɛ̈ɛ̈"]')
+        .forEach(function ($node,i){
+            if (next.indexOf($node.getAttribute('data-id'))<0){
+                $node.removeAttribute('data-show');
+                $node.className = $node.className.replace(/\s(n|y)/gi,'')
+            }
+    })
+}
+
+document
+    .querySelector('.reset a')
+    .addEventListener('click', function(e){
+
+        document
+            .querySelectorAll('[data-show="Ɣɛ̈ɛ̈"]')
+            .forEach(function ($node,i){
+                $node.removeAttribute('data-show');
+                $node.className = $node.className.replace(/\s(n|y)/gi,'')
+        })
+
+        $body.removeAttribute('data-result');
+        $body.removeAttribute('data-state');
+        $start.setAttribute('class','q');
+        scroll.animateScroll(0)
+        
+})
+
+
+/*! smooth-scroll v16.1.2 | (c) 2020 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/smooth-scroll */
+window.Element&&!Element.prototype.closest&&(Element.prototype.closest=function(e){var t,n=(this.document||this.ownerDocument).querySelectorAll(e),o=this;do{for(t=n.length;0<=--t&&n.item(t)!==o;);}while(t<0&&(o=o.parentElement));return o}),(function(){if("function"==typeof window.CustomEvent)return;function e(e,t){t=t||{bubbles:!1,cancelable:!1,detail:void 0};var n=document.createEvent("CustomEvent");return n.initCustomEvent(e,t.bubbles,t.cancelable,t.detail),n}e.prototype=window.Event.prototype,window.CustomEvent=e})(),(function(){for(var r=0,e=["ms","moz","webkit","o"],t=0;t<e.length&&!window.requestAnimationFrame;++t)window.requestAnimationFrame=window[e[t]+"RequestAnimationFrame"],window.cancelAnimationFrame=window[e[t]+"CancelAnimationFrame"]||window[e[t]+"CancelRequestAnimationFrame"];window.requestAnimationFrame||(window.requestAnimationFrame=function(e,t){var n=(new Date).getTime(),o=Math.max(0,16-(n-r)),a=window.setTimeout((function(){e(n+o)}),o);return r=n+o,a}),window.cancelAnimationFrame||(window.cancelAnimationFrame=function(e){clearTimeout(e)})})(),(function(e,t){"function"==typeof define&&define.amd?define([],(function(){return t(e)})):"object"==typeof exports?module.exports=t(e):e.SmoothScroll=t(e)})("undefined"!=typeof global?global:"undefined"!=typeof window?window:this,(function(q){"use strict";var I={ignore:"[data-scroll-ignore]",header:null,topOnEmptyHash:!0,speed:500,speedAsDuration:!1,durationMax:null,durationMin:null,clip:!0,offset:0,easing:"easeInOutCubic",customEasing:null,updateURL:!0,popstate:!0,emitEvents:!0},F=function(){var n={};return Array.prototype.forEach.call(arguments,(function(e){for(var t in e){if(!e.hasOwnProperty(t))return;n[t]=e[t]}})),n},r=function(e){"#"===e.charAt(0)&&(e=e.substr(1));for(var t,n=String(e),o=n.length,a=-1,r="",i=n.charCodeAt(0);++a<o;){if(0===(t=n.charCodeAt(a)))throw new InvalidCharacterError("Invalid character: the input contains U+0000.");1<=t&&t<=31||127==t||0===a&&48<=t&&t<=57||1===a&&48<=t&&t<=57&&45===i?r+="\\"+t.toString(16)+" ":r+=128<=t||45===t||95===t||48<=t&&t<=57||65<=t&&t<=90||97<=t&&t<=122?n.charAt(a):"\\"+n.charAt(a)}return"#"+r},L=function(){return Math.max(document.body.scrollHeight,document.documentElement.scrollHeight,document.body.offsetHeight,document.documentElement.offsetHeight,document.body.clientHeight,document.documentElement.clientHeight)},x=function(e){return e?(t=e,parseInt(q.getComputedStyle(t).height,10)+e.offsetTop):0;var t},H=function(e,t,n,o){if(t.emitEvents&&"function"==typeof q.CustomEvent){var a=new CustomEvent(e,{bubbles:!0,detail:{anchor:n,toggle:o}});document.dispatchEvent(a)}};return function(o,e){var A,a,O,C,M={};M.cancelScroll=function(e){cancelAnimationFrame(C),C=null,e||H("scrollCancel",A)},M.animateScroll=function(i,c,e){M.cancelScroll();var s=F(A||I,e||{}),u="[object Number]"===Object.prototype.toString.call(i),t=u||!i.tagName?null:i;if(u||t){var l=q.pageYOffset;s.header&&!O&&(O=document.querySelector(s.header));var n,o,a,m,r,d,f,h,p=x(O),g=u?i:(function(e,t,n,o){var a=0;if(e.offsetParent)for(;a+=e.offsetTop,e=e.offsetParent;);return a=Math.max(a-t-n,0),o&&(a=Math.min(a,L()-q.innerHeight)),a})(t,p,parseInt("function"==typeof s.offset?s.offset(i,c):s.offset,10),s.clip),y=g-l,v=L(),w=0,S=(n=y,a=(o=s).speedAsDuration?o.speed:Math.abs(n/1e3*o.speed),o.durationMax&&a>o.durationMax?o.durationMax:o.durationMin&&a<o.durationMin?o.durationMin:parseInt(a,10)),E=function(e,t){var n,o,a,r=q.pageYOffset;if(e==t||r==t||(l<t&&q.innerHeight+r)>=v)return M.cancelScroll(!0),o=t,a=u,0===(n=i)&&document.body.focus(),a||(n.focus(),document.activeElement!==n&&(n.setAttribute("tabindex","-1"),n.focus(),n.style.outline="none"),q.scrollTo(0,o)),H("scrollStop",s,i,c),!(C=m=null)},b=function(e){var t,n,o;m||(m=e),w+=e-m,d=l+y*(n=r=1<(r=0===S?0:w/S)?1:r,"easeInQuad"===(t=s).easing&&(o=n*n),"easeOutQuad"===t.easing&&(o=n*(2-n)),"easeInOutQuad"===t.easing&&(o=n<.5?2*n*n:(4-2*n)*n-1),"easeInCubic"===t.easing&&(o=n*n*n),"easeOutCubic"===t.easing&&(o=--n*n*n+1),"easeInOutCubic"===t.easing&&(o=n<.5?4*n*n*n:(n-1)*(2*n-2)*(2*n-2)+1),"easeInQuart"===t.easing&&(o=n*n*n*n),"easeOutQuart"===t.easing&&(o=1- --n*n*n*n),"easeInOutQuart"===t.easing&&(o=n<.5?8*n*n*n*n:1-8*--n*n*n*n),"easeInQuint"===t.easing&&(o=n*n*n*n*n),"easeOutQuint"===t.easing&&(o=1+--n*n*n*n*n),"easeInOutQuint"===t.easing&&(o=n<.5?16*n*n*n*n*n:1+16*--n*n*n*n*n),t.customEasing&&(o=t.customEasing(n)),o||n),q.scrollTo(0,Math.floor(d)),E(d,g)||(C=q.requestAnimationFrame(b),m=e)};0===q.pageYOffset&&q.scrollTo(0,0),f=i,h=s,u||history.pushState&&h.updateURL&&history.pushState({smoothScroll:JSON.stringify(h),anchor:f.id},document.title,f===document.documentElement?"#top":"#"+f.id),"matchMedia"in q&&q.matchMedia("(prefers-reduced-motion)").matches?q.scrollTo(0,Math.floor(g)):(H("scrollStart",s,i,c),M.cancelScroll(!0),q.requestAnimationFrame(b))}};var t=function(e){if(!e.defaultPrevented&&!(0!==e.button||e.metaKey||e.ctrlKey||e.shiftKey)&&"closest"in e.target&&(a=e.target.closest(o))&&"a"===a.tagName.toLowerCase()&&!e.target.closest(A.ignore)&&a.hostname===q.location.hostname&&a.pathname===q.location.pathname&&/#/.test(a.href)){var t,n;try{t=r(decodeURIComponent(a.hash))}catch(e){t=r(a.hash)}if("#"===t){if(!A.topOnEmptyHash)return;n=document.documentElement}else n=document.querySelector(t);(n=n||"#top"!==t?n:document.documentElement)&&(e.preventDefault(),(function(e){if(history.replaceState&&e.updateURL&&!history.state){var t=q.location.hash;t=t||"",history.replaceState({smoothScroll:JSON.stringify(e),anchor:t||q.pageYOffset},document.title,t||q.location.href)}})(A),M.animateScroll(n,a))}},n=function(e){if(null!==history.state&&history.state.smoothScroll&&history.state.smoothScroll===JSON.stringify(A)){var t=history.state.anchor;"string"==typeof t&&t&&!(t=document.querySelector(r(history.state.anchor)))||M.animateScroll(t,null,{updateURL:!1})}};M.destroy=function(){A&&(document.removeEventListener("click",t,!1),q.removeEventListener("popstate",n,!1),M.cancelScroll(),C=O=a=A=null)};return (function(){if(!("querySelector"in document&&"addEventListener"in q&&"requestAnimationFrame"in q&&"closest"in q.Element.prototype))throw"Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.";M.destroy(),A=F(I,e||{}),O=A.header?document.querySelector(A.header):null,document.addEventListener("click",t,!1),A.updateURL&&A.popstate&&q.addEventListener("popstate",n,!1)})(),M}}));
+
+/* (c) 2017 Chris Ferdinandi, MIT License, https://gomakethings.com */
+var getOffsetTop=function(f){var t=0;if(f.offsetParent)for(;f;)t+=f.offsetTop,f=f.offsetParent;return t>=0?t:0};
+
+var scroll = new SmoothScroll(null, {
+   speed: 1000,
+   easing: 'easeInOutQuad',
+   clip: true
+})
+
+</script>
+</body>
+</html>
